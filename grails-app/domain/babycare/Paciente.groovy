@@ -1,6 +1,6 @@
 package babycare
 
-class Paciente extends Persona{
+class Paciente extends Afiliado{
 	
 	double peso
 	double talla

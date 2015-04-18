@@ -1,6 +1,6 @@
 package babycare
 
-class Responsable extends Persona {
+class Responsable extends Afiliado {
 	
 	int registroEPS
 	Paciente hijos
