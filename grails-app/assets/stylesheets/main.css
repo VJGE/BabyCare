@@ -10,20 +10,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE LAYOUT */
 
-html {
-	background-color: #fff;
-	background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-	background-image: linear-gradient(top, #aaa, #ddd);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
-	background-repeat: no-repeat;
-	height: 100%;
-	/* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
 html.no-cssgradients {
 	background-color: #aaa;
 }
@@ -40,14 +26,76 @@ body {
 	background: #ffffff;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 1024px;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #2d8ab5;
 	-webkit-box-shadow: 0 0 0.3em #2d8ab5;
 	        box-shadow: 0 0 0.3em #2d8ab5;
 }
 
-#grailsLogo {
+.loginSep{
+	margin-top: 10px;
+}
+
+#loginContainer{
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+
+}
+.clase_login input[type="text"] {
+	padding: 10px;
+	margin: 20px;
+	margin-top: 10px;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.clase_login input[type="password"] {
+	margin-top: 10px;
+  margin-bottom: 10px;
+  border-top-left-radius: 30;
+  border-top-right-radius: 30;
+}
+
+body {
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+.clase_login_label{
+	margin-left: 20px;
+}
+.clase_login_encabezado{
+	margin-left: 25px;
+}
+.btn{
+	background-color: #5CA8D3;
+	border-color: #fff;
+}
+
+.btn-log:hover, .btn-log:focus, .btn-log:active{
+	background-color: #fff;
+	border-color: #5CA8D3;
+
+}
+.separador{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.check{
+	margin: auto;
+}
+
+.clase_login {
+  max-width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#logo {
+
 	background-color: #5ca8d3;
 }
 
@@ -89,7 +137,7 @@ img {
 
 /* GENERAL */
 
-#grailsLogo a {
+#Logo a {
 	display: inline-block;
 	margin: 1em;
 }
@@ -108,7 +156,7 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #5CA8D3;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
@@ -118,7 +166,7 @@ img {
 }
 
 .footer a {
-	color: #255b17;
+	color: #5CA8D3;
 }
 
 .spinner {
@@ -244,8 +292,13 @@ label {
 	display: inline-block;
 	margin: 0 0.25em 0 0;
 }
-
-input, select, textarea {
+input{
+	background-color: #62d78b;
+	border: 1px solid #cccccc;
+	font-size: 1em;
+	padding: 0.2em 0.4em;
+}
+select, textarea {
 	background-color: #fcfcfc;
 	border: 1px solid #cccccc;
 	font-size: 1em;
@@ -344,7 +397,7 @@ fieldset.embedded legend {
 }
 
 .errors {
-	background: #fff3f3;
+	background: #ecf3f4;
 	border: 1px solid #ffaaaa;
 	color: #cc0000;
 	   -moz-box-shadow: 0 0 0.25em #ff8888;
@@ -371,29 +424,30 @@ fieldset.embedded legend {
 /* form fields with errors */
 
 .error input, .error select, .error textarea {
-	background: #fff3f3;
-	border-color: #ffaaaa;
+	background: #ecf3f4;
+	border-color: #81c8d5;
 	color: #cc0000;
 }
 
 .error input:focus, .error select:focus, .error textarea:focus {
-	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
-	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
-	        box-shadow: 0 0 0.5em #ffaaaa;
+	   -moz-box-shadow: 0 0 0.5em #81c8d5;
+	-webkit-box-shadow: 0 0 0.5em #81c8d5;
+	        box-shadow: 0 0 0.5em #81c8d5;
 }
 
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
 
 input:invalid, select:invalid, textarea:invalid {
-	background: #fff3f3;
-	border-color: #ffaaaa;
+	background: #ecf3f4;
+	border-color: #81c8d5;
 	color: #cc0000;
 }
 
+
 input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-	   -moz-box-shadow: 0 0 0.5em #ffaaaa;
-	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
-	        box-shadow: 0 0 0.5em #ffaaaa;
+	   -moz-box-shadow: 0 0 0.5em #81c8d5;
+	-webkit-box-shadow: 0 0 0.5em #81c8d5;
+	        box-shadow: 0 0 0.5em #81c8d5;
 }
 
 /* TABLES */
