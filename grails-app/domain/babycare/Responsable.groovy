@@ -1,6 +1,6 @@
 package babycare
 
-class Tutor extends Persona {
+class Responsable extends Persona {
 	
 	int registroEPS
 	Paciente hijos

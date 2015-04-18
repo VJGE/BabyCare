@@ -5,8 +5,8 @@ package babycare
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(TutorController)
-@Mock(Tutor)
+@TestFor(ResponsableController)
+@Mock(Responsable)
 class TutorControllerSpec extends Specification {
 
     def populateValidParams(params) {
@@ -38,7 +38,7 @@ class TutorControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def tutor = new Tutor()
+            def tutor = new Responsable()
             tutor.validate()
             controller.save(tutor)
 
@@ -49,14 +49,14 @@ class TutorControllerSpec extends Specification {
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            tutor = new Tutor(params)
+            tutor = new Responsable(params)
 
             controller.save(tutor)
 
         then:"A redirect is issued to the show action"
             response.redirectedUrl == '/tutor/show/1'
             controller.flash.message != null
-            Tutor.count() == 1
+            Responsable.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,7 +68,7 @@ class TutorControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def tutor = new Tutor(params)
+            def tutor = new Responsable(params)
             controller.show(tutor)
 
         then:"A model is populated containing the domain instance"
@@ -84,7 +84,7 @@ class TutorControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def tutor = new Tutor(params)
+            def tutor = new Responsable(params)
             controller.edit(tutor)
 
         then:"A model is populated containing the domain instance"
@@ -104,7 +104,7 @@ class TutorControllerSpec extends Specification {
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def tutor = new Tutor()
+            def tutor = new Responsable()
             tutor.validate()
             controller.update(tutor)
 
@@ -115,7 +115,7 @@ class TutorControllerSpec extends Specification {
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            tutor = new Tutor(params).save(flush: true)
+            tutor = new Responsable(params).save(flush: true)
             controller.update(tutor)
 
         then:"A redirect is issues to the show action"
@@ -136,16 +136,16 @@ class TutorControllerSpec extends Specification {
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def tutor = new Tutor(params).save(flush: true)
+            def tutor = new Responsable(params).save(flush: true)
 
         then:"It exists"
-            Tutor.count() == 1
+            Responsable.count() == 1
 
         when:"The domain instance is passed to the delete action"
             controller.delete(tutor)
 
         then:"The instance is deleted"
-            Tutor.count() == 0
+            Responsable.count() == 0
             response.redirectedUrl == '/tutor/index'
             flash.message != null
     }

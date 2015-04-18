@@ -1,5 +1,5 @@
 
-<%@ page import="babycare.Tutor" %>
+<%@ page import="babycare.Responsable" %>
 <!DOCTYPE html>
 <html>
 	<head>

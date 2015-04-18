@@ -1,6 +1,6 @@
 package babycare
 
-class HistoriaMedica {
+class Vacuna {
 
     static constraints = {
     }

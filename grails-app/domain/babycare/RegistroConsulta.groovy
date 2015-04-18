@@ -5,7 +5,7 @@ class RegistroConsulta {
 	String fecha   //en caso de que sea mejor otro tipo de dato puede ser cambiado
 	String motivoConsulta 
 	String conceptoMedico
-	static belongsTo=[historiaMedica:HistoriaMedica]		//herencia
+	static belongsTo=[historiaMedica:HistoriaClinica]		//herencia
 	
     static constraints = {		
 		fecha nullable:false							//esta se deberia auto-asignar con la fecha del momento de diligenciamiento

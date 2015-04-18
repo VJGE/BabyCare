@@ -34,7 +34,7 @@
 		<g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="historiaMedica" name="historiaMedica.id" from="${babycare.HistoriaMedica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaMedica?.id}" class="many-to-one"/>
+	<g:select id="historiaMedica" name="historiaMedica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaMedica?.id}" class="many-to-one"/>
 
 </div>
 
