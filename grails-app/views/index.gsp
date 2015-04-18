@@ -5,14 +5,14 @@
 		<title>Baby Care</title>
 		<style type="text/css" media="screen">
 			#status {
-				background-color: #eee;
-				border: .2em solid #fff;
+				background-color: #fff;
+				border: .2em solid #a2c0fd;
 				margin: 2em 2em 1em;
 				padding: 1em;
 				width: 12em;
 				float: left;
-				-moz-box-shadow: 0px 0px 1.25em #ccc;
-				-webkit-box-shadow: 0px 0px 1.25em #ccc;
+				-moz-box-shadow: 0px 0px 1.25em #e6ebf6;
+				-webkit-box-shadow: 0px 0px 1.25em #eee;
 				box-shadow: 0px 0px 1.25em #ccc;
 				-moz-border-radius: 0.6em;
 				-webkit-border-radius: 0.6em;
