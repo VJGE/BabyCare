@@ -26,11 +26,13 @@
 					
 						<g:sortableColumn property="fecha" title="${message(code: 'registroConsulta.fecha.label', default: 'Fecha')}" />
 					
-						<g:sortableColumn property="motivoConsulta" title="${message(code: 'registroConsulta.motivoConsulta.label', default: 'Motivo Consulta')}" />
+						<g:sortableColumn property="tipoConsulta" title="${message(code: 'registroConsulta.tipoConsulta.label', default: 'Tipo Consulta')}" />
 					
 						<g:sortableColumn property="conceptoMedico" title="${message(code: 'registroConsulta.conceptoMedico.label', default: 'Concepto Medico')}" />
 					
 						<th><g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" /></th>
+					
+						<g:sortableColumn property="observaciones" title="${message(code: 'registroConsulta.observaciones.label', default: 'Observaciones')}" />
 					
 					</tr>
 				</thead>
@@ -40,11 +42,13 @@
 					
 						<td><g:link action="show" id="${registroConsultaInstance.id}">${fieldValue(bean: registroConsultaInstance, field: "fecha")}</g:link></td>
 					
-						<td>${fieldValue(bean: registroConsultaInstance, field: "motivoConsulta")}</td>
+						<td>${fieldValue(bean: registroConsultaInstance, field: "tipoConsulta")}</td>
 					
 						<td>${fieldValue(bean: registroConsultaInstance, field: "conceptoMedico")}</td>
 					
 						<td>${fieldValue(bean: registroConsultaInstance, field: "historiaMedica")}</td>
+					
+						<td>${fieldValue(bean: registroConsultaInstance, field: "observaciones")}</td>
 					
 					</tr>
 				</g:each>
