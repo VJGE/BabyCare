@@ -4,11 +4,11 @@
 <html>
 	<head>
 		<meta name="layout" content="main">
-		<g:set var="entityName" value="${message(code: 'tutor.label', default: 'Tutor')}" />
+		<g:set var="entityName" value="${message(code: 'responsable.label', default: 'Responsable')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<a href="#show-tutor" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+		<a href="#show-responsable" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
 		<div class="nav" role="navigation">
 			<ul>
 				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
@@ -16,36 +16,108 @@
 				<li><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></li>
 			</ul>
 		</div>
-		<div id="show-tutor" class="content scaffold-show" role="main">
+		<div id="show-responsable" class="content scaffold-show" role="main">
 			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-			<ol class="property-list tutor">
+			<ol class="property-list responsable">
 			
-				<g:if test="${tutorInstance?.registroEPS}">
+				<g:if test="${responsableInstance?.tipoAfiliado}">
 				<li class="fieldcontain">
-					<span id="registroEPS-label" class="property-label"><g:message code="tutor.registroEPS.label" default="Registro EPS" /></span>
+					<span id="tipoAfiliado-label" class="property-label"><g:message code="responsable.tipoAfiliado.label" default="Tipo Afiliado" /></span>
 					
-						<span class="property-value" aria-labelledby="registroEPS-label"><g:fieldValue bean="${tutorInstance}" field="registroEPS"/></span>
+						<span class="property-value" aria-labelledby="tipoAfiliado-label"><g:fieldValue bean="${responsableInstance}" field="tipoAfiliado"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${tutorInstance?.hijos}">
+				<g:if test="${responsableInstance?.ciudad}">
 				<li class="fieldcontain">
-					<span id="hijos-label" class="property-label"><g:message code="tutor.hijos.label" default="Hijos" /></span>
+					<span id="ciudad-label" class="property-label"><g:message code="responsable.ciudad.label" default="Ciudad" /></span>
 					
-						<span class="property-value" aria-labelledby="hijos-label"><g:link controller="paciente" action="show" id="${tutorInstance?.hijos?.id}">${tutorInstance?.hijos?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="ciudad-label"><g:fieldValue bean="${responsableInstance}" field="ciudad"/></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${tutorInstance?.paciente}">
+				<g:if test="${responsableInstance?.estadoCivil}">
 				<li class="fieldcontain">
-					<span id="paciente-label" class="property-label"><g:message code="tutor.paciente.label" default="Paciente" /></span>
+					<span id="estadoCivil-label" class="property-label"><g:message code="responsable.estadoCivil.label" default="Estado Civil" /></span>
 					
-						<g:each in="${tutorInstance.paciente}" var="p">
+						<span class="property-value" aria-labelledby="estadoCivil-label"><g:fieldValue bean="${responsableInstance}" field="estadoCivil"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.nivelSalarial}">
+				<li class="fieldcontain">
+					<span id="nivelSalarial-label" class="property-label"><g:message code="responsable.nivelSalarial.label" default="Nivel Salarial" /></span>
+					
+						<span class="property-value" aria-labelledby="nivelSalarial-label"><g:fieldValue bean="${responsableInstance}" field="nivelSalarial"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.tipoPlan}">
+				<li class="fieldcontain">
+					<span id="tipoPlan-label" class="property-label"><g:message code="responsable.tipoPlan.label" default="Tipo Plan" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoPlan-label"><g:fieldValue bean="${responsableInstance}" field="tipoPlan"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.ipsPrimaria}">
+				<li class="fieldcontain">
+					<span id="ipsPrimaria-label" class="property-label"><g:message code="responsable.ipsPrimaria.label" default="Ips Primaria" /></span>
+					
+						<span class="property-value" aria-labelledby="ipsPrimaria-label"><g:fieldValue bean="${responsableInstance}" field="ipsPrimaria"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.eps}">
+				<li class="fieldcontain">
+					<span id="eps-label" class="property-label"><g:message code="responsable.eps.label" default="Eps" /></span>
+					
+						<span class="property-value" aria-labelledby="eps-label"><g:fieldValue bean="${responsableInstance}" field="eps"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.ocupacion}">
+				<li class="fieldcontain">
+					<span id="ocupacion-label" class="property-label"><g:message code="responsable.ocupacion.label" default="Ocupacion" /></span>
+					
+						<span class="property-value" aria-labelledby="ocupacion-label"><g:fieldValue bean="${responsableInstance}" field="ocupacion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.parentesco}">
+				<li class="fieldcontain">
+					<span id="parentesco-label" class="property-label"><g:message code="responsable.parentesco.label" default="Parentesco" /></span>
+					
+						<span class="property-value" aria-labelledby="parentesco-label"><g:fieldValue bean="${responsableInstance}" field="parentesco"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.contrase�a}">
+				<li class="fieldcontain">
+					<span id="contrase�a-label" class="property-label"><g:message code="responsable.contrase�a.label" default="Contrasea" /></span>
+					
+						<span class="property-value" aria-labelledby="contrase�a-label"><g:fieldValue bean="${responsableInstance}" field="contrase�a"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.paciente}">
+				<li class="fieldcontain">
+					<span id="paciente-label" class="property-label"><g:message code="responsable.paciente.label" default="Paciente" /></span>
+					
+						<g:each in="${responsableInstance.paciente}" var="p">
 						<span class="property-value" aria-labelledby="paciente-label"><g:link controller="paciente" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
 					
@@ -53,9 +125,9 @@
 				</g:if>
 			
 			</ol>
-			<g:form url="[resource:tutorInstance, action:'delete']" method="DELETE">
+			<g:form url="[resource:responsableInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
-					<g:link class="edit" action="edit" resource="${tutorInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+					<g:link class="edit" action="edit" resource="${responsableInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>

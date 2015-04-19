@@ -27,16 +27,16 @@
 				<li class="fieldcontain">
 					<span id="fecha-label" class="property-label"><g:message code="registroConsulta.fecha.label" default="Fecha" /></span>
 					
-						<span class="property-value" aria-labelledby="fecha-label"><g:fieldValue bean="${registroConsultaInstance}" field="fecha"/></span>
+						<span class="property-value" aria-labelledby="fecha-label"><g:formatDate date="${registroConsultaInstance?.fecha}" /></span>
 					
 				</li>
 				</g:if>
 			
-				<g:if test="${registroConsultaInstance?.motivoConsulta}">
+				<g:if test="${registroConsultaInstance?.tipoConsulta}">
 				<li class="fieldcontain">
-					<span id="motivoConsulta-label" class="property-label"><g:message code="registroConsulta.motivoConsulta.label" default="Motivo Consulta" /></span>
+					<span id="tipoConsulta-label" class="property-label"><g:message code="registroConsulta.tipoConsulta.label" default="Tipo Consulta" /></span>
 					
-						<span class="property-value" aria-labelledby="motivoConsulta-label"><g:fieldValue bean="${registroConsultaInstance}" field="motivoConsulta"/></span>
+						<span class="property-value" aria-labelledby="tipoConsulta-label"><g:fieldValue bean="${registroConsultaInstance}" field="tipoConsulta"/></span>
 					
 				</li>
 				</g:if>
@@ -54,7 +54,16 @@
 				<li class="fieldcontain">
 					<span id="historiaMedica-label" class="property-label"><g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" /></span>
 					
-						<span class="property-value" aria-labelledby="historiaMedica-label"><g:link controller="historiaMedica" action="show" id="${registroConsultaInstance?.historiaMedica?.id}">${registroConsultaInstance?.historiaMedica?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="historiaMedica-label"><g:link controller="historiaClinica" action="show" id="${registroConsultaInstance?.historiaMedica?.id}">${registroConsultaInstance?.historiaMedica?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${registroConsultaInstance?.observaciones}">
+				<li class="fieldcontain">
+					<span id="observaciones-label" class="property-label"><g:message code="registroConsulta.observaciones.label" default="Observaciones" /></span>
+					
+						<span class="property-value" aria-labelledby="observaciones-label"><g:fieldValue bean="${registroConsultaInstance}" field="observaciones"/></span>
 					
 				</li>
 				</g:if>

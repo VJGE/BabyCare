@@ -12,11 +12,11 @@ class ResponsableController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Responsable.list(params), model:[tutorInstanceCount: Responsable.count()]
+        respond Responsable.list(params), model:[responsableInstanceCount: Responsable.count()]
     }
 
-    def show(Responsable tutorInstance) {
-        respond tutorInstance
+    def show(Responsable responsableInstance) {
+        respond responsableInstance
     }
 
     def create() {
@@ -24,68 +24,68 @@ class ResponsableController {
     }
 
     @Transactional
-    def save(Responsable tutorInstance) {
-        if (tutorInstance == null) {
+    def save(Responsable responsableInstance) {
+        if (responsableInstance == null) {
             notFound()
             return
         }
 
-        if (tutorInstance.hasErrors()) {
-            respond tutorInstance.errors, view:'create'
+        if (responsableInstance.hasErrors()) {
+            respond responsableInstance.errors, view:'create'
             return
         }
 
-        tutorInstance.save flush:true
+        responsableInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.created.message', args: [message(code: 'tutor.label', default: 'Tutor'), tutorInstance.id])
-                redirect tutorInstance
+                flash.message = message(code: 'default.created.message', args: [message(code: 'responsable.label', default: 'Responsable'), responsableInstance.id])
+                redirect responsableInstance
             }
-            '*' { respond tutorInstance, [status: CREATED] }
+            '*' { respond responsableInstance, [status: CREATED] }
         }
     }
 
-    def edit(Responsable tutorInstance) {
-        respond tutorInstance
+    def edit(Responsable responsableInstance) {
+        respond responsableInstance
     }
 
     @Transactional
-    def update(Responsable tutorInstance) {
-        if (tutorInstance == null) {
+    def update(Responsable responsableInstance) {
+        if (responsableInstance == null) {
             notFound()
             return
         }
 
-        if (tutorInstance.hasErrors()) {
-            respond tutorInstance.errors, view:'edit'
+        if (responsableInstance.hasErrors()) {
+            respond responsableInstance.errors, view:'edit'
             return
         }
 
-        tutorInstance.save flush:true
+        responsableInstance.save flush:true
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.updated.message', args: [message(code: 'Tutor.label', default: 'Tutor'), tutorInstance.id])
-                redirect tutorInstance
+                flash.message = message(code: 'default.updated.message', args: [message(code: 'Responsable.label', default: 'Responsable'), responsableInstance.id])
+                redirect responsableInstance
             }
-            '*'{ respond tutorInstance, [status: OK] }
+            '*'{ respond responsableInstance, [status: OK] }
         }
     }
 
     @Transactional
-    def delete(Responsable tutorInstance) {
+    def delete(Responsable responsableInstance) {
 
-        if (tutorInstance == null) {
+        if (responsableInstance == null) {
             notFound()
             return
         }
 
-        tutorInstance.delete flush:true
+        responsableInstance.delete flush:true
 
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Tutor.label', default: 'Tutor'), tutorInstance.id])
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'Responsable.label', default: 'Responsable'), responsableInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
@@ -95,7 +95,7 @@ class ResponsableController {
     protected void notFound() {
         request.withFormat {
             form multipartForm {
-                flash.message = message(code: 'default.not.found.message', args: [message(code: 'tutor.label', default: 'Tutor'), params.id])
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'responsable.label', default: 'Responsable'), params.id])
                 redirect action: "index", method: "GET"
             }
             '*'{ render status: NOT_FOUND }
