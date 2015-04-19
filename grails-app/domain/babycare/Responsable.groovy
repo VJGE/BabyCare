@@ -2,11 +2,13 @@ package babycare
 
 class Responsable extends Afiliado {
 	
-	int registroEPS
-	Paciente hijos
+	String parentesco
+	String contraseña
+	
 	static hasMany=[paciente:Paciente]						//un tutor puede tener varios hijos
 	
     static constraints = {
-		registroEPS blank:false, nullable:false			//en caso de que se este ingresando un usuario no puede ser blank, null por si algo
+		parentesco (blank: false, nullable: false, inList["Padre", "Madre", "Hermano(a)", "Tio(a)", "Abuelo(a)"])
+		contraseña (blank:false, nullable:false, unique:true)	
     }
 }
