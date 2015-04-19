@@ -1,6 +1,6 @@
 package babycare
 
-class Doctor extends Persona {
+class Medico extends Persona {
 
     static constraints = {
     }

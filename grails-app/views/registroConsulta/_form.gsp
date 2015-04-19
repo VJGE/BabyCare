@@ -7,16 +7,16 @@
 		<g:message code="registroConsulta.fecha.label" default="Fecha" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="fecha" required="" value="${registroConsultaInstance?.fecha}"/>
+	<g:datePicker name="fecha" precision="day"  value="${registroConsultaInstance?.fecha}"  />
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'motivoConsulta', 'error')} required">
-	<label for="motivoConsulta">
-		<g:message code="registroConsulta.motivoConsulta.label" default="Motivo Consulta" />
+<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'tipoConsulta', 'error')} required">
+	<label for="tipoConsulta">
+		<g:message code="registroConsulta.tipoConsulta.label" default="Tipo Consulta" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="motivoConsulta" required="" value="${registroConsultaInstance?.motivoConsulta}"/>
+	<g:textField name="tipoConsulta" maxlength="70" required="" value="${registroConsultaInstance?.tipoConsulta}"/>
 
 </div>
 
@@ -34,7 +34,16 @@
 		<g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="historiaMedica" name="historiaMedica.id" from="${babycare.HistoriaMedica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaMedica?.id}" class="many-to-one"/>
+	<g:select id="historiaMedica" name="historiaMedica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaMedica?.id}" class="many-to-one"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'observaciones', 'error')} required">
+	<label for="observaciones">
+		<g:message code="registroConsulta.observaciones.label" default="Observaciones" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="observaciones" required="" value="${registroConsultaInstance?.observaciones}"/>
 
 </div>
 

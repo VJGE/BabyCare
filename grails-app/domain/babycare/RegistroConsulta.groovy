@@ -2,14 +2,16 @@ package babycare
 
 class RegistroConsulta {
 	
-	String fecha   //en caso de que sea mejor otro tipo de dato puede ser cambiado
-	String motivoConsulta 
+	Date fecha  
+	String tipoConsulta
 	String conceptoMedico
-	static belongsTo=[historiaMedica:HistoriaMedica]		//herencia
+	String observaciones 
+	
+	static belongsTo=[historiaMedica:HistoriaClinica]		
 	
     static constraints = {		
-		fecha nullable:false							//esta se deberia auto-asignar con la fecha del momento de diligenciamiento
-		motivoConsulta blank:false, minsize:5, maxsize:70		//los 70 caracteres deberian garantizar ser concisos 
-		conceptoMedico blank:false, minsize:10				//no tiene un maximo porque un concepto medico no se puede limitar
+		fecha (nullable:false );							
+		tipoConsulta (blank:false, size:5..70);
+		conceptoMedico (blank:false, minsize:10);				
     }
 }

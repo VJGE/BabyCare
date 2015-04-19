@@ -6,7 +6,7 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Tutor)
+@TestFor(Responsable)
 class TutorSpec extends Specification {
 
     def setup() {
