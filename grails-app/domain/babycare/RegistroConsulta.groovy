@@ -7,7 +7,7 @@ class RegistroConsulta {
 	String conceptoMedico
 	String observaciones 
 	
-	static belongsTo=[historiaMedica:HistoriaClinica]		
+	static belongsTo=[historiaClinica:HistoriaClinica]		
 	
     static constraints = {		
 		fecha (nullable:false );							

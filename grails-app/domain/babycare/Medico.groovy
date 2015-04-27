@@ -7,6 +7,8 @@ class Medico extends Persona {
 	String usuario
 	String contraseña
 
+	static hasMany = [consultas: RegistroConsulta, pacientes:Paciente]
+	
     static constraints = {
 		especialidad(nullable : false)
 		registroMedico(blank : false, nullable : false, matches : "([a-zA-Z0-9]*)")

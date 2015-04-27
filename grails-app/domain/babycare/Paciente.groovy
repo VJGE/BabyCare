@@ -14,6 +14,9 @@ class Paciente extends Afiliado{
 	double pcNacimiento
 	int edadGestacional
 	
+	static hasMany = [padres:Padre, vacunas:Vacuna]
+	static belongsTo = [responsable:Responsable, historiaClinica:HistoriaClinica]
+	
     static constraints = {
 		peso (blank:false);
 		talla (blank:false);

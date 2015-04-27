@@ -11,6 +11,8 @@ class Vacuna {
 	String centro
 	String observaciones
 	
+	static belongsTo = [pacienteV : Paciente]
+	
     static constraints = {
 		nombreVacuna (blank: false, nullable: false, size:2..20);
 		edadAplicacion (blank: false, nullable: false, min:0, max:6);
