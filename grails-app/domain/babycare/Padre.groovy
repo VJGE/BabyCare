@@ -7,7 +7,7 @@ class Padre extends Persona {
 	String enfermedadesActuales
 	String tratamientos
 	
-	static hasMany = [hijos:Paciente]
+	static belongsTo = [hijo:Paciente]
 	
     static constraints = {
 		pesoPadre (blank: false);
