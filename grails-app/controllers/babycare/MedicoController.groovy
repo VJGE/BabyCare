@@ -9,7 +9,29 @@ import grails.transaction.Transactional
 class MedicoController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+	
+	static scaffold = Medico
+	def login(){}
 
+	def handleLogin(){
+		def medico = Medico.findByDocumento(params.documento)
+		if(!medico){
+			flash.message='Usuario no encontrado'
+			redirect(action:'login')
+			return
+		}else{
+		 session.medico = medico
+		 redirect(controller:'todo')
+		}
+	}
+	
+	def logout(){
+		if(session.user){
+			session.user=null
+			redirect(action:'login')
+		}
+	}
+	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Medico.list(params), model:[medicoInstanceCount: Medico.count()]

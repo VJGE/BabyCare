@@ -26,7 +26,6 @@ body {
 	background: #ffffff;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 1024px;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #2d8ab5;
 	-webkit-box-shadow: 0 0 0.3em #2d8ab5;
@@ -72,12 +71,14 @@ body {
 .btn{
 	background-color: #5CA8D3;
 	border-color: #fff;
+	padding: 15px 50px;
+ 	border-radius: 10px;
 }
 
 .btn-log:hover, .btn-log:focus, .btn-log:active{
 	background-color: #fff;
 	border-color: #5CA8D3;
-
+	margin-bottom: 10px;
 }
 .separador{
 	margin-left: 20px;
@@ -647,4 +648,19 @@ th:hover, tr:hover {
 a.skip {
 	position: absolute;
 	left: -9999px;
+}
+		
+
+#topbar{
+	text align:left;
+	width: 778px;
+	margin: 0px auto;
+	padding: 5px 0;
+}
+
+#topbar #menu {
+	float:right;
+	width: 240px;
+	text align: right;
+	front-size: 10px;
 }
