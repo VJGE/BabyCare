@@ -1,3 +1,7 @@
+<div id="imagen">
+	<asset:image src="icono.png" alt="Grails"/>
+</div>
+
 <div id="menu">	
 	<nobr>
 		<g:if test="${session.medico}">
@@ -8,4 +12,4 @@
 			<g:link controller ="Medico" action="login"><g:message code="topbar.Login" /></g:link>
 		</g:else>
 	</nobr>
-</div>	
+</div>

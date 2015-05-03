@@ -114,7 +114,8 @@ body {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+	color: #000000;
+	font-size:medium;
 }
 
 a:hover, a:active {
@@ -160,9 +161,9 @@ img {
 	background: #5CA8D3;
 	color: #000;
 	clear: both;
-	font-size: 0.8em;
-	margin-top: 1.5em;
-	padding: 1em;
+	font-size: 1em;
+	margin-top: 1em;
+	padding: 1.5em;
 	min-height: 1em;
 }
 
@@ -650,17 +651,29 @@ a.skip {
 	left: -9999px;
 }
 		
-
 #topbar{
 	text align:left;
-	width: 778px;
-	margin: 0px auto;
-	padding: 5px 0;
+	margin: -30px auto;
+	padding: 100px 0;
+	background: #5CA8D3;
 }
 
 #topbar #menu {
 	float:right;
 	width: 240px;
-	text align: right;
+	text align: center;
 	front-size: 10px;
 }
+
+#topbar #imagen{
+	float: left;
+}
+
+#footer{
+	clear:both;
+	text-align: center;
+	padding: 3px;
+	border-top: 1px solid #333;
+}
+
+
