@@ -66,6 +66,7 @@ body {
 	margin-left: 20px;
 }
 .clase_login_encabezado{
+	margin-top: 100px;
 	margin-left: 25px;
 }
 .btn{
@@ -73,6 +74,10 @@ body {
 	border-color: #fff;
 	padding: 15px 50px;
  	border-radius: 10px;
+ 	margin-bottom: 50px;
+ 	margin-left: 27px;
+ 	margin-top: 20px;
+ 	font-size: inherit;
 }
 
 .btn-log:hover, .btn-log:focus, .btn-log:active{
