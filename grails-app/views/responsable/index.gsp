@@ -24,17 +24,17 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="nombre" title="${message(code: 'responsable.nombre.label', default: 'Nombre')}" />
+					
+						<g:sortableColumn property="apellido" title="${message(code: 'responsable.apellido.label', default: 'Apellido')}" />
+					
+						<g:sortableColumn property="tipoDocumento" title="${message(code: 'responsable.tipoDocumento.label', default: 'Tipo Documento')}" />
+					
+						<g:sortableColumn property="documento" title="${message(code: 'responsable.documento.label', default: 'Documento')}" />
+					
+						<g:sortableColumn property="edad" title="${message(code: 'responsable.edad.label', default: 'Edad')}" />
+					
 						<g:sortableColumn property="tipoAfiliado" title="${message(code: 'responsable.tipoAfiliado.label', default: 'Tipo Afiliado')}" />
-					
-						<g:sortableColumn property="ciudad" title="${message(code: 'responsable.ciudad.label', default: 'Ciudad')}" />
-					
-						<g:sortableColumn property="estadoCivil" title="${message(code: 'responsable.estadoCivil.label', default: 'Estado Civil')}" />
-					
-						<g:sortableColumn property="nivelSalarial" title="${message(code: 'responsable.nivelSalarial.label', default: 'Nivel Salarial')}" />
-					
-						<g:sortableColumn property="tipoPlan" title="${message(code: 'responsable.tipoPlan.label', default: 'Tipo Plan')}" />
-					
-						<g:sortableColumn property="ipsPrimaria" title="${message(code: 'responsable.ipsPrimaria.label', default: 'Ips Primaria')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${responsableInstanceList}" status="i" var="responsableInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${responsableInstance.id}">${fieldValue(bean: responsableInstance, field: "tipoAfiliado")}</g:link></td>
+						<td><g:link action="show" id="${responsableInstance.id}">${fieldValue(bean: responsableInstance, field: "nombre")}</g:link></td>
 					
-						<td>${fieldValue(bean: responsableInstance, field: "ciudad")}</td>
+						<td>${fieldValue(bean: responsableInstance, field: "apellido")}</td>
 					
-						<td>${fieldValue(bean: responsableInstance, field: "estadoCivil")}</td>
+						<td>${fieldValue(bean: responsableInstance, field: "tipoDocumento")}</td>
 					
-						<td>${fieldValue(bean: responsableInstance, field: "nivelSalarial")}</td>
+						<td>${fieldValue(bean: responsableInstance, field: "documento")}</td>
 					
-						<td>${fieldValue(bean: responsableInstance, field: "tipoPlan")}</td>
+						<td>${fieldValue(bean: responsableInstance, field: "edad")}</td>
 					
-						<td>${fieldValue(bean: responsableInstance, field: "ipsPrimaria")}</td>
+						<td>${fieldValue(bean: responsableInstance, field: "tipoAfiliado")}</td>
 					
 					</tr>
 				</g:each>

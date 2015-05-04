@@ -24,11 +24,35 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="nombre" title="${message(code: 'padre.nombre.label', default: 'Nombre')}" />
+					
+						<g:sortableColumn property="apellido" title="${message(code: 'padre.apellido.label', default: 'Apellido')}" />
+					
+						<g:sortableColumn property="tipoDocumento" title="${message(code: 'padre.tipoDocumento.label', default: 'Tipo Documento')}" />
+					
+						<g:sortableColumn property="documento" title="${message(code: 'padre.documento.label', default: 'Documento')}" />
+					
+						<g:sortableColumn property="edad" title="${message(code: 'padre.edad.label', default: 'Edad')}" />
+					
+						<g:sortableColumn property="pesoPadre" title="${message(code: 'padre.pesoPadre.label', default: 'Peso Padre')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${padreInstanceList}" status="i" var="padreInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${padreInstance.id}">${fieldValue(bean: padreInstance, field: "nombre")}</g:link></td>
+					
+						<td>${fieldValue(bean: padreInstance, field: "apellido")}</td>
+					
+						<td>${fieldValue(bean: padreInstance, field: "tipoDocumento")}</td>
+					
+						<td>${fieldValue(bean: padreInstance, field: "documento")}</td>
+					
+						<td>${fieldValue(bean: padreInstance, field: "edad")}</td>
+					
+						<td>${fieldValue(bean: padreInstance, field: "pesoPadre")}</td>
 					
 					</tr>
 				</g:each>

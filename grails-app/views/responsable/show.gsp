@@ -23,6 +23,51 @@
 			</g:if>
 			<ol class="property-list responsable">
 			
+				<g:if test="${responsableInstance?.nombre}">
+				<li class="fieldcontain">
+					<span id="nombre-label" class="property-label"><g:message code="responsable.nombre.label" default="Nombre" /></span>
+					
+						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${responsableInstance}" field="nombre"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.apellido}">
+				<li class="fieldcontain">
+					<span id="apellido-label" class="property-label"><g:message code="responsable.apellido.label" default="Apellido" /></span>
+					
+						<span class="property-value" aria-labelledby="apellido-label"><g:fieldValue bean="${responsableInstance}" field="apellido"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.tipoDocumento}">
+				<li class="fieldcontain">
+					<span id="tipoDocumento-label" class="property-label"><g:message code="responsable.tipoDocumento.label" default="Tipo Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoDocumento-label"><g:fieldValue bean="${responsableInstance}" field="tipoDocumento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.documento}">
+				<li class="fieldcontain">
+					<span id="documento-label" class="property-label"><g:message code="responsable.documento.label" default="Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="documento-label"><g:fieldValue bean="${responsableInstance}" field="documento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.edad}">
+				<li class="fieldcontain">
+					<span id="edad-label" class="property-label"><g:message code="responsable.edad.label" default="Edad" /></span>
+					
+						<span class="property-value" aria-labelledby="edad-label"><g:fieldValue bean="${responsableInstance}" field="edad"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${responsableInstance?.tipoAfiliado}">
 				<li class="fieldcontain">
 					<span id="tipoAfiliado-label" class="property-label"><g:message code="responsable.tipoAfiliado.label" default="Tipo Afiliado" /></span>
@@ -104,11 +149,20 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${responsableInstance?.contrase�a}">
+				<g:if test="${responsableInstance?.contrasenia}">
 				<li class="fieldcontain">
-					<span id="contrase�a-label" class="property-label"><g:message code="responsable.contrase�a.label" default="Contrasea" /></span>
+					<span id="contrasenia-label" class="property-label"><g:message code="responsable.contrasenia.label" default="Contrasebua" /></span>
 					
-						<span class="property-value" aria-labelledby="contrase�a-label"><g:fieldValue bean="${responsableInstance}" field="contrase�a"/></span>
+						<span class="property-value" aria-labelledby="contrasenia-label"><g:fieldValue bean="${responsableInstance}" field="contrasenia"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.direccion}">
+				<li class="fieldcontain">
+					<span id="direccion-label" class="property-label"><g:message code="responsable.direccion.label" default="Direccion" /></span>
+					
+						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${responsableInstance}" field="direccion"/></span>
 					
 				</li>
 				</g:if>
@@ -120,6 +174,15 @@
 						<g:each in="${responsableInstance.paciente}" var="p">
 						<span class="property-value" aria-labelledby="paciente-label"><g:link controller="paciente" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
 						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${responsableInstance?.telefono}">
+				<li class="fieldcontain">
+					<span id="telefono-label" class="property-label"><g:message code="responsable.telefono.label" default="Telefono" /></span>
+					
+						<span class="property-value" aria-labelledby="telefono-label"><g:fieldValue bean="${responsableInstance}" field="telefono"/></span>
 					
 				</li>
 				</g:if>

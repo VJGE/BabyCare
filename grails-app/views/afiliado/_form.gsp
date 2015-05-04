@@ -2,6 +2,51 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'nombre', 'error')} required">
+	<label for="nombre">
+		<g:message code="afiliado.nombre.label" default="Nombre" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="nombre" required="" value="${afiliadoInstance?.nombre}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'apellido', 'error')} required">
+	<label for="apellido">
+		<g:message code="afiliado.apellido.label" default="Apellido" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="apellido" required="" value="${afiliadoInstance?.apellido}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'tipoDocumento', 'error')} required">
+	<label for="tipoDocumento">
+		<g:message code="afiliado.tipoDocumento.label" default="Tipo Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tipoDocumento" from="${afiliadoInstance.constraints.tipoDocumento.inList}" required="" value="${afiliadoInstance?.tipoDocumento}" valueMessagePrefix="afiliado.tipoDocumento"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'documento', 'error')} required">
+	<label for="documento">
+		<g:message code="afiliado.documento.label" default="Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="documento" required="" value="${afiliadoInstance?.documento}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'edad', 'error')} required">
+	<label for="edad">
+		<g:message code="afiliado.edad.label" default="Edad" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="edad" type="number" value="${afiliadoInstance.edad}" required=""/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'tipoAfiliado', 'error')} required">
 	<label for="tipoAfiliado">
 		<g:message code="afiliado.tipoAfiliado.label" default="Tipo Afiliado" />
@@ -71,6 +116,24 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:select name="ocupacion" from="${afiliadoInstance.constraints.ocupacion.inList}" required="" value="${afiliadoInstance?.ocupacion}" valueMessagePrefix="afiliado.ocupacion"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'direccion', 'error')} required">
+	<label for="direccion">
+		<g:message code="afiliado.direccion.label" default="Direccion" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="direccion" required="" value="${afiliadoInstance?.direccion}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: afiliadoInstance, field: 'telefono', 'error')} required">
+	<label for="telefono">
+		<g:message code="afiliado.telefono.label" default="Telefono" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="telefono" type="number" value="${afiliadoInstance.telefono}" required=""/>
 
 </div>
 

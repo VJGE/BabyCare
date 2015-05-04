@@ -24,17 +24,17 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="nombre" title="${message(code: 'afiliado.nombre.label', default: 'Nombre')}" />
+					
+						<g:sortableColumn property="apellido" title="${message(code: 'afiliado.apellido.label', default: 'Apellido')}" />
+					
+						<g:sortableColumn property="tipoDocumento" title="${message(code: 'afiliado.tipoDocumento.label', default: 'Tipo Documento')}" />
+					
+						<g:sortableColumn property="documento" title="${message(code: 'afiliado.documento.label', default: 'Documento')}" />
+					
+						<g:sortableColumn property="edad" title="${message(code: 'afiliado.edad.label', default: 'Edad')}" />
+					
 						<g:sortableColumn property="tipoAfiliado" title="${message(code: 'afiliado.tipoAfiliado.label', default: 'Tipo Afiliado')}" />
-					
-						<g:sortableColumn property="ciudad" title="${message(code: 'afiliado.ciudad.label', default: 'Ciudad')}" />
-					
-						<g:sortableColumn property="estadoCivil" title="${message(code: 'afiliado.estadoCivil.label', default: 'Estado Civil')}" />
-					
-						<g:sortableColumn property="nivelSalarial" title="${message(code: 'afiliado.nivelSalarial.label', default: 'Nivel Salarial')}" />
-					
-						<g:sortableColumn property="tipoPlan" title="${message(code: 'afiliado.tipoPlan.label', default: 'Tipo Plan')}" />
-					
-						<g:sortableColumn property="ipsPrimaria" title="${message(code: 'afiliado.ipsPrimaria.label', default: 'Ips Primaria')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${afiliadoInstanceList}" status="i" var="afiliadoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${afiliadoInstance.id}">${fieldValue(bean: afiliadoInstance, field: "tipoAfiliado")}</g:link></td>
+						<td><g:link action="show" id="${afiliadoInstance.id}">${fieldValue(bean: afiliadoInstance, field: "nombre")}</g:link></td>
 					
-						<td>${fieldValue(bean: afiliadoInstance, field: "ciudad")}</td>
+						<td>${fieldValue(bean: afiliadoInstance, field: "apellido")}</td>
 					
-						<td>${fieldValue(bean: afiliadoInstance, field: "estadoCivil")}</td>
+						<td>${fieldValue(bean: afiliadoInstance, field: "tipoDocumento")}</td>
 					
-						<td>${fieldValue(bean: afiliadoInstance, field: "nivelSalarial")}</td>
+						<td>${fieldValue(bean: afiliadoInstance, field: "documento")}</td>
 					
-						<td>${fieldValue(bean: afiliadoInstance, field: "tipoPlan")}</td>
+						<td>${fieldValue(bean: afiliadoInstance, field: "edad")}</td>
 					
-						<td>${fieldValue(bean: afiliadoInstance, field: "ipsPrimaria")}</td>
+						<td>${fieldValue(bean: afiliadoInstance, field: "tipoAfiliado")}</td>
 					
 					</tr>
 				</g:each>

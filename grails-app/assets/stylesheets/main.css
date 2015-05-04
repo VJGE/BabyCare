@@ -24,7 +24,7 @@ html * {
 
 body {
 	background: #ffffff;
-	color: #333333;
+	color: #5CA8D3;
 	margin: 0 auto;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #2d8ab5;
@@ -679,6 +679,8 @@ a.skip {
 	text-align: center;
 	padding: 3px;
 	border-top: 1px solid #333;
+	margin-top:80px;
 }
+
 
 

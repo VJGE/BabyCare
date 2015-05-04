@@ -2,6 +2,123 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'nombre', 'error')} required">
+	<label for="nombre">
+		<g:message code="paciente.nombre.label" default="Nombre" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="nombre" required="" value="${pacienteInstance?.nombre}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'apellido', 'error')} required">
+	<label for="apellido">
+		<g:message code="paciente.apellido.label" default="Apellido" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="apellido" required="" value="${pacienteInstance?.apellido}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'tipoDocumento', 'error')} required">
+	<label for="tipoDocumento">
+		<g:message code="paciente.tipoDocumento.label" default="Tipo Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tipoDocumento" from="${pacienteInstance.constraints.tipoDocumento.inList}" required="" value="${pacienteInstance?.tipoDocumento}" valueMessagePrefix="paciente.tipoDocumento"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'documento', 'error')} required">
+	<label for="documento">
+		<g:message code="paciente.documento.label" default="Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="documento" required="" value="${pacienteInstance?.documento}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'edad', 'error')} required">
+	<label for="edad">
+		<g:message code="paciente.edad.label" default="Edad" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="edad" type="number" value="${pacienteInstance.edad}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'tipoAfiliado', 'error')} required">
+	<label for="tipoAfiliado">
+		<g:message code="paciente.tipoAfiliado.label" default="Tipo Afiliado" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tipoAfiliado" from="${pacienteInstance.constraints.tipoAfiliado.inList}" required="" value="${pacienteInstance?.tipoAfiliado}" valueMessagePrefix="paciente.tipoAfiliado"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'ciudad', 'error')} required">
+	<label for="ciudad">
+		<g:message code="paciente.ciudad.label" default="Ciudad" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="ciudad" maxlength="20" required="" value="${pacienteInstance?.ciudad}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'estadoCivil', 'error')} required">
+	<label for="estadoCivil">
+		<g:message code="paciente.estadoCivil.label" default="Estado Civil" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="estadoCivil" from="${pacienteInstance.constraints.estadoCivil.inList}" required="" value="${pacienteInstance?.estadoCivil}" valueMessagePrefix="paciente.estadoCivil"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'nivelSalarial', 'error')} required">
+	<label for="nivelSalarial">
+		<g:message code="paciente.nivelSalarial.label" default="Nivel Salarial" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="nivelSalarial" type="number" min="1" max="3" value="${pacienteInstance.nivelSalarial}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'tipoPlan', 'error')} required">
+	<label for="tipoPlan">
+		<g:message code="paciente.tipoPlan.label" default="Tipo Plan" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tipoPlan" from="${pacienteInstance.constraints.tipoPlan.inList}" required="" value="${pacienteInstance?.tipoPlan}" valueMessagePrefix="paciente.tipoPlan"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'ipsPrimaria', 'error')} required">
+	<label for="ipsPrimaria">
+		<g:message code="paciente.ipsPrimaria.label" default="Ips Primaria" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="ipsPrimaria" required="" value="${pacienteInstance?.ipsPrimaria}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'eps', 'error')} required">
+	<label for="eps">
+		<g:message code="paciente.eps.label" default="Eps" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="eps" maxlength="20" required="" value="${pacienteInstance?.eps}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'ocupacion', 'error')} required">
+	<label for="ocupacion">
+		<g:message code="paciente.ocupacion.label" default="Ocupacion" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="ocupacion" from="${pacienteInstance.constraints.ocupacion.inList}" required="" value="${pacienteInstance?.ocupacion}" valueMessagePrefix="paciente.ocupacion"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'peso', 'error')} required">
 	<label for="peso">
 		<g:message code="paciente.peso.label" default="Peso" />
@@ -98,6 +215,78 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="edadGestacional" type="number" max="45" value="${pacienteInstance.edadGestacional}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'direccion', 'error')} required">
+	<label for="direccion">
+		<g:message code="paciente.direccion.label" default="Direccion" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="direccion" required="" value="${pacienteInstance?.direccion}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'historiaClinica', 'error')} required">
+	<label for="historiaClinica">
+		<g:message code="paciente.historiaClinica.label" default="Historia Clinica" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="historiaClinica" name="historiaClinica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${pacienteInstance?.historiaClinica?.id}" class="many-to-one"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'padres', 'error')} ">
+	<label for="padres">
+		<g:message code="paciente.padres.label" default="Padres" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${pacienteInstance?.padres?}" var="p">
+    <li><g:link controller="padre" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="padre" action="create" params="['paciente.id': pacienteInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'padre.label', default: 'Padre')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'responsable', 'error')} required">
+	<label for="responsable">
+		<g:message code="paciente.responsable.label" default="Responsable" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="responsable" name="responsable.id" from="${babycare.Responsable.list()}" optionKey="id" required="" value="${pacienteInstance?.responsable?.id}" class="many-to-one"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'telefono', 'error')} required">
+	<label for="telefono">
+		<g:message code="paciente.telefono.label" default="Telefono" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="telefono" type="number" value="${pacienteInstance.telefono}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'vacunas', 'error')} ">
+	<label for="vacunas">
+		<g:message code="paciente.vacunas.label" default="Vacunas" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${pacienteInstance?.vacunas?}" var="v">
+    <li><g:link controller="vacuna" action="show" id="${v.id}">${v?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="vacuna" action="create" params="['paciente.id': pacienteInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'vacuna.label', default: 'Vacuna')])}</g:link>
+</li>
+</ul>
+
 
 </div>
 

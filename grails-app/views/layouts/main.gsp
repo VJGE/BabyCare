@@ -17,7 +17,6 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"></a></div>
 		<div id="topbar"> <g:render template="/common/topbar" />
 		</div>
 		<g:layoutBody/>
@@ -26,6 +25,5 @@
 		</div>
 		<div class="footer" role="contentinfo">
 		</div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
 </html>

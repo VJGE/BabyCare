@@ -24,17 +24,17 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="peso" title="${message(code: 'paciente.peso.label', default: 'Peso')}" />
+						<g:sortableColumn property="nombre" title="${message(code: 'paciente.nombre.label', default: 'Nombre')}" />
 					
-						<g:sortableColumn property="talla" title="${message(code: 'paciente.talla.label', default: 'Talla')}" />
+						<g:sortableColumn property="apellido" title="${message(code: 'paciente.apellido.label', default: 'Apellido')}" />
 					
-						<g:sortableColumn property="pc" title="${message(code: 'paciente.pc.label', default: 'Pc')}" />
+						<g:sortableColumn property="tipoDocumento" title="${message(code: 'paciente.tipoDocumento.label', default: 'Tipo Documento')}" />
 					
-						<g:sortableColumn property="tipoNacimiento" title="${message(code: 'paciente.tipoNacimiento.label', default: 'Tipo Nacimiento')}" />
+						<g:sortableColumn property="documento" title="${message(code: 'paciente.documento.label', default: 'Documento')}" />
 					
-						<g:sortableColumn property="grupoSanguineo" title="${message(code: 'paciente.grupoSanguineo.label', default: 'Grupo Sanguineo')}" />
+						<g:sortableColumn property="edad" title="${message(code: 'paciente.edad.label', default: 'Edad')}" />
 					
-						<g:sortableColumn property="rh" title="${message(code: 'paciente.rh.label', default: 'Rh')}" />
+						<g:sortableColumn property="tipoAfiliado" title="${message(code: 'paciente.tipoAfiliado.label', default: 'Tipo Afiliado')}" />
 					
 					</tr>
 				</thead>
@@ -42,17 +42,17 @@
 				<g:each in="${pacienteInstanceList}" status="i" var="pacienteInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${pacienteInstance.id}">${fieldValue(bean: pacienteInstance, field: "peso")}</g:link></td>
+						<td><g:link action="show" id="${pacienteInstance.id}">${fieldValue(bean: pacienteInstance, field: "nombre")}</g:link></td>
 					
-						<td>${fieldValue(bean: pacienteInstance, field: "talla")}</td>
+						<td>${fieldValue(bean: pacienteInstance, field: "apellido")}</td>
 					
-						<td>${fieldValue(bean: pacienteInstance, field: "pc")}</td>
+						<td>${fieldValue(bean: pacienteInstance, field: "tipoDocumento")}</td>
 					
-						<td>${fieldValue(bean: pacienteInstance, field: "tipoNacimiento")}</td>
+						<td>${fieldValue(bean: pacienteInstance, field: "documento")}</td>
 					
-						<td>${fieldValue(bean: pacienteInstance, field: "grupoSanguineo")}</td>
+						<td>${fieldValue(bean: pacienteInstance, field: "edad")}</td>
 					
-						<td>${fieldValue(bean: pacienteInstance, field: "rh")}</td>
+						<td>${fieldValue(bean: pacienteInstance, field: "tipoAfiliado")}</td>
 					
 					</tr>
 				</g:each>

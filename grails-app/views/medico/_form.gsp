@@ -74,12 +74,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: medicoInstance, field: 'contrase�a', 'error')} required">
-	<label for="contrase�a">
-		<g:message code="medico.contrase�a.label" default="Contrasea" />
+<div class="fieldcontain ${hasErrors(bean: medicoInstance, field: 'contrasenia', 'error')} required">
+	<label for="contrasenia">
+		<g:message code="medico.contrasenia.label" default="Contrasenia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="contrase�a" required="" value="${medicoInstance?.contrase�a}"/>
+	<g:textField name="contrasenia" required="" value="${medicoInstance?.contrasenia}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: medicoInstance, field: 'consultas', 'error')} ">
+	<label for="consultas">
+		<g:message code="medico.consultas.label" default="Consultas" />
+		
+	</label>
+	<g:select name="consultas" from="${babycare.RegistroConsulta.list()}" multiple="multiple" optionKey="id" size="5" value="${medicoInstance?.consultas*.id}" class="many-to-many"/>
 
 </div>
 
@@ -89,6 +98,15 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="direccion" required="" value="${medicoInstance?.direccion}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: medicoInstance, field: 'pacientes', 'error')} ">
+	<label for="pacientes">
+		<g:message code="medico.pacientes.label" default="Pacientes" />
+		
+	</label>
+	<g:select name="pacientes" from="${babycare.Paciente.list()}" multiple="multiple" optionKey="id" size="5" value="${medicoInstance?.pacientes*.id}" class="many-to-many"/>
 
 </div>
 

@@ -23,6 +23,123 @@
 			</g:if>
 			<ol class="property-list paciente">
 			
+				<g:if test="${pacienteInstance?.nombre}">
+				<li class="fieldcontain">
+					<span id="nombre-label" class="property-label"><g:message code="paciente.nombre.label" default="Nombre" /></span>
+					
+						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${pacienteInstance}" field="nombre"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.apellido}">
+				<li class="fieldcontain">
+					<span id="apellido-label" class="property-label"><g:message code="paciente.apellido.label" default="Apellido" /></span>
+					
+						<span class="property-value" aria-labelledby="apellido-label"><g:fieldValue bean="${pacienteInstance}" field="apellido"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.tipoDocumento}">
+				<li class="fieldcontain">
+					<span id="tipoDocumento-label" class="property-label"><g:message code="paciente.tipoDocumento.label" default="Tipo Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoDocumento-label"><g:fieldValue bean="${pacienteInstance}" field="tipoDocumento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.documento}">
+				<li class="fieldcontain">
+					<span id="documento-label" class="property-label"><g:message code="paciente.documento.label" default="Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="documento-label"><g:fieldValue bean="${pacienteInstance}" field="documento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.edad}">
+				<li class="fieldcontain">
+					<span id="edad-label" class="property-label"><g:message code="paciente.edad.label" default="Edad" /></span>
+					
+						<span class="property-value" aria-labelledby="edad-label"><g:fieldValue bean="${pacienteInstance}" field="edad"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.tipoAfiliado}">
+				<li class="fieldcontain">
+					<span id="tipoAfiliado-label" class="property-label"><g:message code="paciente.tipoAfiliado.label" default="Tipo Afiliado" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoAfiliado-label"><g:fieldValue bean="${pacienteInstance}" field="tipoAfiliado"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.ciudad}">
+				<li class="fieldcontain">
+					<span id="ciudad-label" class="property-label"><g:message code="paciente.ciudad.label" default="Ciudad" /></span>
+					
+						<span class="property-value" aria-labelledby="ciudad-label"><g:fieldValue bean="${pacienteInstance}" field="ciudad"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.estadoCivil}">
+				<li class="fieldcontain">
+					<span id="estadoCivil-label" class="property-label"><g:message code="paciente.estadoCivil.label" default="Estado Civil" /></span>
+					
+						<span class="property-value" aria-labelledby="estadoCivil-label"><g:fieldValue bean="${pacienteInstance}" field="estadoCivil"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.nivelSalarial}">
+				<li class="fieldcontain">
+					<span id="nivelSalarial-label" class="property-label"><g:message code="paciente.nivelSalarial.label" default="Nivel Salarial" /></span>
+					
+						<span class="property-value" aria-labelledby="nivelSalarial-label"><g:fieldValue bean="${pacienteInstance}" field="nivelSalarial"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.tipoPlan}">
+				<li class="fieldcontain">
+					<span id="tipoPlan-label" class="property-label"><g:message code="paciente.tipoPlan.label" default="Tipo Plan" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoPlan-label"><g:fieldValue bean="${pacienteInstance}" field="tipoPlan"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.ipsPrimaria}">
+				<li class="fieldcontain">
+					<span id="ipsPrimaria-label" class="property-label"><g:message code="paciente.ipsPrimaria.label" default="Ips Primaria" /></span>
+					
+						<span class="property-value" aria-labelledby="ipsPrimaria-label"><g:fieldValue bean="${pacienteInstance}" field="ipsPrimaria"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.eps}">
+				<li class="fieldcontain">
+					<span id="eps-label" class="property-label"><g:message code="paciente.eps.label" default="Eps" /></span>
+					
+						<span class="property-value" aria-labelledby="eps-label"><g:fieldValue bean="${pacienteInstance}" field="eps"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.ocupacion}">
+				<li class="fieldcontain">
+					<span id="ocupacion-label" class="property-label"><g:message code="paciente.ocupacion.label" default="Ocupacion" /></span>
+					
+						<span class="property-value" aria-labelledby="ocupacion-label"><g:fieldValue bean="${pacienteInstance}" field="ocupacion"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${pacienteInstance?.peso}">
 				<li class="fieldcontain">
 					<span id="peso-label" class="property-label"><g:message code="paciente.peso.label" default="Peso" /></span>
@@ -118,6 +235,64 @@
 					<span id="edadGestacional-label" class="property-label"><g:message code="paciente.edadGestacional.label" default="Edad Gestacional" /></span>
 					
 						<span class="property-value" aria-labelledby="edadGestacional-label"><g:fieldValue bean="${pacienteInstance}" field="edadGestacional"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.direccion}">
+				<li class="fieldcontain">
+					<span id="direccion-label" class="property-label"><g:message code="paciente.direccion.label" default="Direccion" /></span>
+					
+						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${pacienteInstance}" field="direccion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.historiaClinica}">
+				<li class="fieldcontain">
+					<span id="historiaClinica-label" class="property-label"><g:message code="paciente.historiaClinica.label" default="Historia Clinica" /></span>
+					
+						<span class="property-value" aria-labelledby="historiaClinica-label"><g:link controller="historiaClinica" action="show" id="${pacienteInstance?.historiaClinica?.id}">${pacienteInstance?.historiaClinica?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.padres}">
+				<li class="fieldcontain">
+					<span id="padres-label" class="property-label"><g:message code="paciente.padres.label" default="Padres" /></span>
+					
+						<g:each in="${pacienteInstance.padres}" var="p">
+						<span class="property-value" aria-labelledby="padres-label"><g:link controller="padre" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.responsable}">
+				<li class="fieldcontain">
+					<span id="responsable-label" class="property-label"><g:message code="paciente.responsable.label" default="Responsable" /></span>
+					
+						<span class="property-value" aria-labelledby="responsable-label"><g:link controller="responsable" action="show" id="${pacienteInstance?.responsable?.id}">${pacienteInstance?.responsable?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.telefono}">
+				<li class="fieldcontain">
+					<span id="telefono-label" class="property-label"><g:message code="paciente.telefono.label" default="Telefono" /></span>
+					
+						<span class="property-value" aria-labelledby="telefono-label"><g:fieldValue bean="${pacienteInstance}" field="telefono"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${pacienteInstance?.vacunas}">
+				<li class="fieldcontain">
+					<span id="vacunas-label" class="property-label"><g:message code="paciente.vacunas.label" default="Vacunas" /></span>
+					
+						<g:each in="${pacienteInstance.vacunas}" var="v">
+						<span class="property-value" aria-labelledby="vacunas-label"><g:link controller="vacuna" action="show" id="${v.id}">${v?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

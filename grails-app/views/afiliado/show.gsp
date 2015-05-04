@@ -23,6 +23,51 @@
 			</g:if>
 			<ol class="property-list afiliado">
 			
+				<g:if test="${afiliadoInstance?.nombre}">
+				<li class="fieldcontain">
+					<span id="nombre-label" class="property-label"><g:message code="afiliado.nombre.label" default="Nombre" /></span>
+					
+						<span class="property-value" aria-labelledby="nombre-label"><g:fieldValue bean="${afiliadoInstance}" field="nombre"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.apellido}">
+				<li class="fieldcontain">
+					<span id="apellido-label" class="property-label"><g:message code="afiliado.apellido.label" default="Apellido" /></span>
+					
+						<span class="property-value" aria-labelledby="apellido-label"><g:fieldValue bean="${afiliadoInstance}" field="apellido"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.tipoDocumento}">
+				<li class="fieldcontain">
+					<span id="tipoDocumento-label" class="property-label"><g:message code="afiliado.tipoDocumento.label" default="Tipo Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoDocumento-label"><g:fieldValue bean="${afiliadoInstance}" field="tipoDocumento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.documento}">
+				<li class="fieldcontain">
+					<span id="documento-label" class="property-label"><g:message code="afiliado.documento.label" default="Documento" /></span>
+					
+						<span class="property-value" aria-labelledby="documento-label"><g:fieldValue bean="${afiliadoInstance}" field="documento"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.edad}">
+				<li class="fieldcontain">
+					<span id="edad-label" class="property-label"><g:message code="afiliado.edad.label" default="Edad" /></span>
+					
+						<span class="property-value" aria-labelledby="edad-label"><g:fieldValue bean="${afiliadoInstance}" field="edad"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${afiliadoInstance?.tipoAfiliado}">
 				<li class="fieldcontain">
 					<span id="tipoAfiliado-label" class="property-label"><g:message code="afiliado.tipoAfiliado.label" default="Tipo Afiliado" /></span>
@@ -91,6 +136,24 @@
 					<span id="ocupacion-label" class="property-label"><g:message code="afiliado.ocupacion.label" default="Ocupacion" /></span>
 					
 						<span class="property-value" aria-labelledby="ocupacion-label"><g:fieldValue bean="${afiliadoInstance}" field="ocupacion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.direccion}">
+				<li class="fieldcontain">
+					<span id="direccion-label" class="property-label"><g:message code="afiliado.direccion.label" default="Direccion" /></span>
+					
+						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${afiliadoInstance}" field="direccion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${afiliadoInstance?.telefono}">
+				<li class="fieldcontain">
+					<span id="telefono-label" class="property-label"><g:message code="afiliado.telefono.label" default="Telefono" /></span>
+					
+						<span class="property-value" aria-labelledby="telefono-label"><g:fieldValue bean="${afiliadoInstance}" field="telefono"/></span>
 					
 				</li>
 				</g:if>

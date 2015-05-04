@@ -2,6 +2,51 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'nombre', 'error')} required">
+	<label for="nombre">
+		<g:message code="responsable.nombre.label" default="Nombre" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="nombre" required="" value="${responsableInstance?.nombre}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'apellido', 'error')} required">
+	<label for="apellido">
+		<g:message code="responsable.apellido.label" default="Apellido" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="apellido" required="" value="${responsableInstance?.apellido}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'tipoDocumento', 'error')} required">
+	<label for="tipoDocumento">
+		<g:message code="responsable.tipoDocumento.label" default="Tipo Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="tipoDocumento" from="${responsableInstance.constraints.tipoDocumento.inList}" required="" value="${responsableInstance?.tipoDocumento}" valueMessagePrefix="responsable.tipoDocumento"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'documento', 'error')} required">
+	<label for="documento">
+		<g:message code="responsable.documento.label" default="Documento" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="documento" required="" value="${responsableInstance?.documento}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'edad', 'error')} required">
+	<label for="edad">
+		<g:message code="responsable.edad.label" default="Edad" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="edad" type="number" value="${responsableInstance.edad}" required=""/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'tipoAfiliado', 'error')} required">
 	<label for="tipoAfiliado">
 		<g:message code="responsable.tipoAfiliado.label" default="Tipo Afiliado" />
@@ -83,12 +128,21 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'contrase�a', 'error')} required">
-	<label for="contrase�a">
-		<g:message code="responsable.contrase�a.label" default="Contrasea" />
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'contrasenia', 'error')} required">
+	<label for="contrasenia">
+		<g:message code="responsable.contrasenia.label" default="Contrasenia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="contrase�a" required="" value="${responsableInstance?.contrase�a}"/>
+	<g:textField name="contrasenia" required="" value="${responsableInstance?.contrasenia}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'direccion', 'error')} required">
+	<label for="direccion">
+		<g:message code="responsable.direccion.label" default="Direccion" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="direccion" required="" value="${responsableInstance?.direccion}"/>
 
 </div>
 
@@ -97,7 +151,25 @@
 		<g:message code="responsable.paciente.label" default="Paciente" />
 		
 	</label>
-	<g:select name="paciente" from="${babycare.Paciente.list()}" multiple="multiple" optionKey="id" size="5" value="${responsableInstance?.paciente*.id}" class="many-to-many"/>
+	
+<ul class="one-to-many">
+<g:each in="${responsableInstance?.paciente?}" var="p">
+    <li><g:link controller="paciente" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="paciente" action="create" params="['responsable.id': responsableInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'paciente.label', default: 'Paciente')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: responsableInstance, field: 'telefono', 'error')} required">
+	<label for="telefono">
+		<g:message code="responsable.telefono.label" default="Telefono" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="telefono" type="number" value="${responsableInstance.telefono}" required=""/>
 
 </div>
 

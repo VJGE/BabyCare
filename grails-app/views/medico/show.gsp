@@ -95,11 +95,22 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${medicoInstance?.contrase�a}">
+				<g:if test="${medicoInstance?.contrasenia}">
 				<li class="fieldcontain">
-					<span id="contrase�a-label" class="property-label"><g:message code="medico.contrase�a.label" default="Contrasea" /></span>
+					<span id="contrasenia-label" class="property-label"><g:message code="medico.contrasenia.label" default="Contrasenia" /></span>
 					
-						<span class="property-value" aria-labelledby="contrase�a-label"><g:fieldValue bean="${medicoInstance}" field="contrase�a"/></span>
+						<span class="property-value" aria-labelledby="contrasenia-label"><g:fieldValue bean="${medicoInstance}" field="contrasenia"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${medicoInstance?.consultas}">
+				<li class="fieldcontain">
+					<span id="consultas-label" class="property-label"><g:message code="medico.consultas.label" default="Consultas" /></span>
+					
+						<g:each in="${medicoInstance.consultas}" var="c">
+						<span class="property-value" aria-labelledby="consultas-label"><g:link controller="registroConsulta" action="show" id="${c.id}">${c?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
@@ -109,6 +120,17 @@
 					<span id="direccion-label" class="property-label"><g:message code="medico.direccion.label" default="Direccion" /></span>
 					
 						<span class="property-value" aria-labelledby="direccion-label"><g:fieldValue bean="${medicoInstance}" field="direccion"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${medicoInstance?.pacientes}">
+				<li class="fieldcontain">
+					<span id="pacientes-label" class="property-label"><g:message code="medico.pacientes.label" default="Pacientes" /></span>
+					
+						<g:each in="${medicoInstance.pacientes}" var="p">
+						<span class="property-value" aria-labelledby="pacientes-label"><g:link controller="paciente" action="show" id="${p.id}">${p?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>
