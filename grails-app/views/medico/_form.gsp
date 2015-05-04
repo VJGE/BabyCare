@@ -79,7 +79,7 @@
 		<g:message code="medico.contrasenia.label" default="Contrasenia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="contrasenia" required="" value="${medicoInstance?.contrasenia}"/>
+	<g:field type="password" name="contrasenia" required="" value="${medicoInstance?.contrasenia}"/>
 
 </div>
 

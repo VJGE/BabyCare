@@ -151,7 +151,7 @@
 			
 				<g:if test="${responsableInstance?.contrasenia}">
 				<li class="fieldcontain">
-					<span id="contrasenia-label" class="property-label"><g:message code="responsable.contrasenia.label" default="Contrasebua" /></span>
+					<span id="contrasenia-label" class="property-label"><g:message code="responsable.contrasenia.label" default="Contrasenia" /></span>
 					
 						<span class="property-value" aria-labelledby="contrasenia-label"><g:fieldValue bean="${responsableInstance}" field="contrasenia"/></span>
 					

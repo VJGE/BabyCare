@@ -34,7 +34,7 @@
 		<g:message code="responsable.documento.label" default="Documento" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="documento" required="" value="${responsableInstance?.documento}"/>
+	<g:textField name="documento" pattern="${responsableInstance.constraints.documento.matches}" required="" value="${responsableInstance?.documento}"/>
 
 </div>
 
@@ -133,7 +133,7 @@
 		<g:message code="responsable.contrasenia.label" default="Contrasenia" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="contrasenia" required="" value="${responsableInstance?.contrasenia}"/>
+	<g:field type="password" name="contrasenia" required="" value="${responsableInstance?.contrasenia}"/>
 
 </div>
 
