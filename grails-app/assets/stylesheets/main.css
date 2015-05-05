@@ -659,7 +659,7 @@ a.skip {
 #topbar{
 	text align:left;
 	margin: -30px auto;
-	padding: 100px 0;
+	padding: 87px 0 8%;
 	background: #5CA8D3;
 }
 
@@ -680,6 +680,10 @@ a.skip {
 	padding: 3px;
 	border-top: 1px solid #333;
 	margin-top:80px;
+}
+
+#imag{
+	max-width: width:100%;
 }
 
 
