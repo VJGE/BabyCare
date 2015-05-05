@@ -49,11 +49,11 @@
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+      	<asset:image src="flechaL.png"  id="left"/>
+        <span class="sr-only">LEFT</span>
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <asset:image src="flechaR.png" id="right" />
         <span class="sr-only">Next</span>
       </a>
     </div>

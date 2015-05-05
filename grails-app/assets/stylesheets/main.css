@@ -659,7 +659,7 @@ a.skip {
 #topbar{
 	text align:left;
 	margin: -30px auto;
-	padding: 100px 0;
+	padding: 87px 0 8%;
 	background: #5CA8D3;
 }
 
@@ -682,6 +682,7 @@ a.skip {
 	margin-top:80px;
 }
 
+<<<<<<< HEAD
 #header{
 	width: 778px;
 	background: #FFFFFF url(../images/header_background.png) repeat-x;
@@ -732,6 +733,10 @@ body {
 
 .buttons{
 	width:250px;
+=======
+#imag{
+	max-width: width:100%;
+>>>>>>> d8152d66bb20d46e22eaf18405d850021b67fe7e
 }
 
 
