@@ -12,6 +12,7 @@ class MedicoController {
 
 	static scaffold = Medico
 	def login(){}
+	def mainMedico(){}
 
 	def handleLogin(){
 		def medico = Medico.findByDocumento(params.documento)
@@ -27,7 +28,7 @@ class MedicoController {
 				 return
 			 }else{
 			 	session.medico = medico
-				redirect(controller:'medico')
+				redirect(action:'mainMedico')
 			 }
 		} 
 	}

@@ -10,6 +10,36 @@ class ResponsableController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
+	static scaffold = Medico
+	def login(){}
+	def mainResp(){}
+
+	def handleLogin(){
+		def responsable = Responsable.findByDocumento(params.documento)
+		def contra = Responsable.findByContrasenia(params.contrasenia)
+		if(!responsable){
+			flash.message='Usuario no encontrado'
+			redirect(action:'login')
+			return
+		}else{
+			 if(!contra){
+				 flash.message='Contraseña incorrecta'
+				 redirect(action:'login')
+				 return
+			 }else{
+				 session.responsable = responsable
+				 redirect(action:'mainResp')
+			 }
+		}
+	}
+	
+	def logout(){
+		if(session.responsable){
+			session.responsable=null
+			redirect(action:'login')
+		}
+	}
+	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Responsable.list(params), model:[responsableInstanceCount: Responsable.count()]

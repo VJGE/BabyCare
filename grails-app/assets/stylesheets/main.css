@@ -682,54 +682,6 @@ a.skip {
 	margin-top:80px;
 }
 
-<<<<<<< HEAD
-#header{
-	width: 778px;
-	background: #FFFFFF url(../images/header_background.png) repeat-x;
-	height: 100px;
-	margin: 0px auto;
-}
-
-#header h1{
-	font family: Arieal,sans-serif;
-	color:white;
-	padding: 20px 0 0 6px;
-	font-size: 1.6cm;
-}
-
-body {
-	margin: 0px;
-	padding: 0px;
-	text-align:center;
-	font family: "Trebuchet MS",Arial, Helvetica,sans-serif;
-	font style: normal;
-	font variant: normal;
-	font size: 13px;
-	line-height: normal;
-	font size-adjust: none;
-	font stretch: normal;
-	color: #333333;
-}
-
-#page {
-	width: 778px;
-	margin: 0px auto;
-	padding: 4px 0;
-	text-align:left;
-}
-
-#content{
-	float:left;
-	width: 560px;
-	color: #000;
-}
-
-#sidebar{
-	float:right;
-	width:200px;
-	color: #000;
-	padding: 3px;
-}
 
 .buttons{
 	width:250px;
@@ -739,5 +691,87 @@ body {
 >>>>>>> d8152d66bb20d46e22eaf18405d850021b67fe7e
 }
 
+<!--                                             RESPONSABLE				-->
 
+.section-content {
+	width: 1100px;
+	margin-top: 600px;
+}
+.section-content2 {
+	width: 1100px;
+	margin-top: 330px;
+}
+.navresp1 {
+	width: 294px;
+	background-color: #5CA8D3;
+	float: left;
+	border:3px outset gray;
+}
+.contentresp1 {
+	margin: 0px 0px 0px 20px;
+	width: 778px;
+	background-color: #CED8F6;
+	float: left;
+	border: 1px outset gray;
+}
+
+.down-boton {
+	margin: 20px;
+	height: 100px;
+	width: 1000px;
+	border: 2px;
+	padding-right: 100px;
+}
+
+section {
+	text-align: center;
+	margin: 20px auto;
+}
+.text-center {
+	text-align: center;
+}
+.clear {
+	clear: both;
+}
+.btn-nav {
+	width: 200px;
+	height: 40px;
+	margin-top: 5px;
+	display: block;
+	padding: 10px;
+	border-radius:5px;
+	border: 3px outset gray;
+	background-color: #A9D0F5;
+	color: black;
+	font-weight: 400;
+	text-decoration: none;
+}
+.btn-nav:hover {
+	border: 3px inset gray;
+	background-color: #819FF7;
+	color: white;
+}
+.navresp1 ul {
+	text-decoration: none;
+	list-style: none;
+}
+.btn-nav2 {
+	width: 130px;
+	height: 20px;
+	margin-top: 5px;
+	display: block;
+	padding: 10px;
+	border-radius:5px;
+	border: 3px outset gray;
+	background-color: #A9D0F5;
+	color: black;
+	font-weight: 400;
+	text-decoration: none;
+	float: right;
+}
+.btn-nav2:hover {
+	border: 3px inset gray;
+	background-color: #819FF7;
+	color: white;
+}
 
