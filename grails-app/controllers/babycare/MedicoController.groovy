@@ -15,19 +15,26 @@ class MedicoController {
 
 	def handleLogin(){
 		def medico = Medico.findByDocumento(params.documento)
+		def contra = Medico.findByContrasenia(params.contrasenia)
 		if(!medico){
 			flash.message='Usuario no encontrado'
 			redirect(action:'login')
 			return
 		}else{
-		 session.medico = medico
-		 redirect(controller:'medico')
-		}
+			 if(!contra){
+				 flash.message='Contraseña incorrecta'
+				 redirect(action:'login')
+				 return
+			 }else{
+			 	session.medico = medico
+				redirect(controller:'medico')
+			 }
+		} 
 	}
 	
 	def logout(){
-		if(session.user){
-			session.user=null
+		if(session.medico){
+			session.medico=null
 			redirect(action:'login')
 		}
 	}

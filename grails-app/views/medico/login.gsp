@@ -4,24 +4,30 @@
 		<meta name="layout" content="main" /> 
 	</head>
 	<body>
+		<g:if test="${flash.message}">
+			<div class="message">
+			${flash.message }
+			</div>
+		</g:if>
 		<div id="loginContainer" class="container"> 
-		<form class="form-signin">
+		<g:form action="handleLogin" method="post" class="form-signin">
 	        <h2 class="clase_login_encabezado">Inicie sesión</h2>
 	        <div class=loginSep>
-	        <input type="text" id="inputDocumento" class="clase_login" placeholder="Numero de documento" required autofocus>
+	        <g:textField name="documento" value="${medico?.documento}" type="text" id="inputDocumento" class="clase_login" placeholder="Numero de documento" />
 	        </div>
 	        <div class=loginSep>
-	        <input type="password" id="inputContraseña" class="clase_login" placeholder="Contraseña" required>
+	        <g:passwordField name="contrasenia" value="${medico?.contrasenia}" type="text" id="inputContraseña" class="clase_login" placeholder="Contraseña " />
 	        </div>
 	        <div class="check">
 	          <label>
 	            <input type="checkbox" value="recuerdame"> Recuerdame
 	          </label>
 	        </div>
-	        <button class="btn btn-lg" type="submit">Ingresar</button>
-      </form>
+	        <g:actionSubmit value="Ingresar" action="handleLogin" class="btn btn-lg" />
+      </g:form>
       </div>
 	</body>
 </html>
+
 
 
