@@ -682,17 +682,19 @@ a.skip {
 	margin-top:80px;
 }
 
+.buttons{
+	width:250px;
+#imag{
+	max-width: width:100%;
+}
 
 .buttons{
 	width:250px;
-=======
 #imag{
 	max-width: width:100%;
->>>>>>> d8152d66bb20d46e22eaf18405d850021b67fe7e
 }
 
 <!--                                             RESPONSABLE				-->
-
 .section-content {
 	width: 1100px;
 	margin-top: 600px;
