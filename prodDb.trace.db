@@ -25125,6 +25125,10 @@ Feature not supported: "isWrapperFor" [50100-176]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:744)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> master
 05-05 21:43:09 jdbc[7]: exception
 org.h2.jdbc.JdbcSQLException: Caracteristica no soportada: "isWrapperFor"
 Feature not supported: "isWrapperFor" [50100-176]
@@ -26454,3 +26458,8 @@ Feature not supported: "isWrapperFor" [50100-176]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:745)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ca00a57269509ac3ee15655746329e1f64148d7
+>>>>>>> master
