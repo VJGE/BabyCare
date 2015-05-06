@@ -4,6 +4,87 @@
 		<title>Baby Care</title>
 		<meta name="layout" content="main" />
 		<asset:stylesheet src="main.css"/>
+		<style type="text/css">
+			.section-content {
+				width: 1100px;
+				margin-top: 10%;
+			}
+			.section-content2 {
+				width: 1100px;
+				margin-top: 430px;
+			}
+			.navresp1 {
+				width: 300px;
+				background-color: #5CA8D3;
+				float: left;
+				border:3px outset gray;
+			}
+			.contentresp1 {
+				margin: 0px 0px 0px 20px;
+				width: 778px;
+				background-color: #CED8F6;
+				float: left;
+				border: 1px outset gray;
+			}
+			.down-boton {
+				margin: 20%;
+				width: 1000px;
+				border: 2px;
+				padding-right: 100px;
+			}
+			section {
+				text-align: center;
+				margin: 20px auto;
+			}
+			.text-center {
+				text-align: center;
+			}
+			.clear {
+				clear: both;
+			}
+			.btn-nav {
+				width: 250px;
+				height: 60px;
+				margin-top: 5px;
+				margin-left: 25px;
+				display: block;
+				padding: 10px;
+				border-radius:5px;
+				border: 3px outset gray;
+				background-color: #A9D0F5;
+				color: black;
+				font-weight: 400;
+				text-decoration: none;
+			}
+			.btn-nav:hover {
+				border: 3px inset gray;
+				background-color: #819FF7;
+				color: white;
+			}
+			.navresp1 ul {
+				text-decoration: none;
+				list-style: none;
+			}
+			.btn-nav2 {
+				width: 180px;
+				height: 40px;
+				margin-top: 5px;
+				display: block;
+				padding: 8px;
+				border-radius:5px;
+				border: 3px outset gray;
+				background-color: #A9D0F5;
+				color: black;
+				font-weight: 400;
+				text-decoration: none;
+				float: right;
+			}
+			.btn-nav2:hover {
+				border: 3px inset gray;
+				background-color: #819FF7;
+				color: white;
+			}	
+		</style>
 		
 	</head>
 	<body>

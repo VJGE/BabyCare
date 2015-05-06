@@ -13,6 +13,7 @@ class ResponsableController {
 	static scaffold = Medico
 	def login(){}
 	def mainResp(){}
+	def mainMedico(){}
 
 	def handleLogin(){
 		def responsable = Responsable.findByDocumento(params.documento)
