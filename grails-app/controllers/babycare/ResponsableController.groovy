@@ -12,7 +12,11 @@ class ResponsableController {
 
 	static scaffold = Medico
 	def login(){}
+<<<<<<< HEAD
 	def mainResp(){}
+=======
+	def mainMedico(){}
+>>>>>>> 6ca00a57269509ac3ee15655746329e1f64148d7
 
 	def handleLogin(){
 		def responsable = Responsable.findByDocumento(params.documento)
@@ -28,7 +32,11 @@ class ResponsableController {
 				 return
 			 }else{
 				 session.responsable = responsable
+<<<<<<< HEAD
 				 redirect(action:'mainResp')
+=======
+				redirect(controller:'responsable')
+>>>>>>> 6ca00a57269509ac3ee15655746329e1f64148d7
 			 }
 		}
 	}
