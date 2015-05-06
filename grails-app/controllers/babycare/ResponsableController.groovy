@@ -12,6 +12,7 @@ class ResponsableController {
 
 	static scaffold = Medico
 	def login(){}
+	def mainResp(){}
 	def mainMedico(){}
 
 	def handleLogin(){
@@ -28,6 +29,7 @@ class ResponsableController {
 				 return
 			 }else{
 				 session.responsable = responsable
+				 redirect(action:'mainResp')
 				redirect(controller:'responsable')
 			 }
 		}
