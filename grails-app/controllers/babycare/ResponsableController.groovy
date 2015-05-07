@@ -9,14 +9,12 @@ import grails.transaction.Transactional
 class ResponsableController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
-
 	static scaffold = Responsable
 	def login(){}
-	def mainResp(){}
-	
+	def mainResp(){}	
 	def handleLogin(){
-		def responsable = Responsable.findByDocumento(params.documento)
-		def contra = Responsable.findByContrasenia(params.contrasenia)
+	def responsable = Responsable.findByDocumento(params.documento)
+	def contra = Responsable.findByContrasenia(params.contrasenia)
 		if(!responsable){
 			flash.message='Usuario no encontrado'
 			redirect(action:'login')
@@ -27,9 +25,8 @@ class ResponsableController {
 				 redirect(action:'login')
 				 return
 			 }else{
-				 session.responsable = responsable
-				 redirect(action:'mainResp')
-			 }
+				 session.responsable = responsable				 
+				 redirect(action:'mainResp')			 }
 		}
 	}
 	
