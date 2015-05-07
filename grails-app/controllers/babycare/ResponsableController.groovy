@@ -11,7 +11,13 @@ class ResponsableController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 	static scaffold = Responsable
 	def login(){}
+<<<<<<< HEAD
 	def mainResp(){}	
+=======
+	def mainResp(){}
+	def mainMedico(){}
+
+>>>>>>> 0ab8dd821ff45c3c581616ee0762e16b55bdaf78
 	def handleLogin(){
 	def responsable = Responsable.findByDocumento(params.documento)
 	def contra = Responsable.findByContrasenia(params.contrasenia)
@@ -25,8 +31,15 @@ class ResponsableController {
 				 redirect(action:'login')
 				 return
 			 }else{
+<<<<<<< HEAD
 				 session.responsable = responsable				 
 				 redirect(action:'mainResp')			 }
+=======
+				 session.responsable = responsable
+				 redirect(action:'mainResp')
+				redirect(controller:'responsable')
+			 }
+>>>>>>> 0ab8dd821ff45c3c581616ee0762e16b55bdaf78
 		}
 	}
 	
