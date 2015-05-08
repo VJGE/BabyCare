@@ -776,4 +776,24 @@ section {
 	background-color: #819FF7;
 	color: white;
 	}
+	
+/* Cosas mainMedico*/
+
+#busqueda{
+	float: left;
+	position: relative;
+	background-color: #329bd7;
+	max-width: 33%;
+	}
+#consultas_hoy{
+	float: left;
+	position: relative;
+	max-width: 33%;
+}
+#usuario{
+	float: right;
+	position: relative;
+	width: 30%;
+	background-color: #329bd7;
+}
 
