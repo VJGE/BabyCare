@@ -23,7 +23,7 @@
 	            <input type="checkbox" value="recuerdame"> Recuerdame
 	          </label>
 	        </div>
-	        <g:actionSubmit value="Ingresar" action="handleLogin" class="btn btn-lg" />
+	        <g:actionSubmit value="Ingresar" action="handleLogin" class="btn btn-log" />
       </g:form>
       </div>
 	</body>
