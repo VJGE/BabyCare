@@ -7,6 +7,7 @@
 		<asset:javascript src="bootstrap.min.js"/>
 		<asset:stylesheet src="carousel.css"/>
 		<asset:javascript src="carousel.js"/>
+		<asset:javascript src="navbar-fixed-top.css"/>
 	</head>
 	<body>	
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -58,31 +59,44 @@
       </a>
     </div>
     
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h2>Sigue de cerca el crecimiento de tu niño!</h2>
+        <p>Ahora podras tener acceso a los reportes y registros de todo lo relacionado con tus hijos. BabyCare siempre a tu lado, apoyando esa hermosa labor de ser padre</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="http://www.minsalud.gov.co/salud/publica/Vacunacion/Paginas/pai.aspx" role="button">Informacion de vacunas &raquo;</a>
+        </p>
+      </div>
+
+    </div>
+    
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <asset:image class="img-circle" src="bebe.jpg" width="140" height="140"/>
+          <h2>Pacientes</h2>
+          <p>Ten siempre en respaldo la información más actualizada de esas personitas tan importantes, consulta la información y revisa el progreso</p>
+          <p><a class="btn btn-default" href="#" role="button">Más información &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <asset:image class="img-circle" src="medico.jpg" width="140" height="140"/>
+          <h2>Medicos</h2>
+          <p>El respaldo en todos los procesos del profesional de la salud, brinda un seguimiento cuidadoso, que deja de lado las molestias de muchas hojas</p>
+          <p><a class="btn btn-default" href="#" role="button">Profesionales de la salud &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <asset:image class="img-circle" src="papas.jpg" width="140" height="140"/>
+          <h2>Responsables</h2>
+          <p>Toda persona a cargo de un paciente tiene el acceso a revisar los datos y la historia clínica, ya sean los padres o acudientes</p>
+          <p><a class="btn btn-default" href="#" role="button">Politicas de uso &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
     
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    
 	</body>
 </html>
