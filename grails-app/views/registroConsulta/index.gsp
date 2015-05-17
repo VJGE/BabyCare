@@ -30,7 +30,7 @@
 					
 						<g:sortableColumn property="conceptoMedico" title="${message(code: 'registroConsulta.conceptoMedico.label', default: 'Concepto Medico')}" />
 					
-						<th><g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" /></th>
+						<th><g:message code="registroConsulta.historiaClinica.label" default="Historia Clinica" /></th>
 					
 						<g:sortableColumn property="observaciones" title="${message(code: 'registroConsulta.observaciones.label', default: 'Observaciones')}" />
 					
@@ -46,7 +46,7 @@
 					
 						<td>${fieldValue(bean: registroConsultaInstance, field: "conceptoMedico")}</td>
 					
-						<td>${fieldValue(bean: registroConsultaInstance, field: "historiaMedica")}</td>
+						<td>${fieldValue(bean: registroConsultaInstance, field: "historiaClinica")}</td>
 					
 						<td>${fieldValue(bean: registroConsultaInstance, field: "observaciones")}</td>
 					

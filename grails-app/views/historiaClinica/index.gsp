@@ -32,6 +32,8 @@
 					
 						<g:sortableColumn property="numeroHistoria" title="${message(code: 'historiaClinica.numeroHistoria.label', default: 'Numero Historia')}" />
 					
+						<th><g:message code="historiaClinica.paciente.label" default="Paciente" /></th>
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -45,6 +47,8 @@
 						<td>${fieldValue(bean: historiaClinicaInstance, field: "lugarHistoria")}</td>
 					
 						<td>${fieldValue(bean: historiaClinicaInstance, field: "numeroHistoria")}</td>
+					
+						<td>${fieldValue(bean: historiaClinicaInstance, field: "paciente")}</td>
 					
 					</tr>
 				</g:each>
