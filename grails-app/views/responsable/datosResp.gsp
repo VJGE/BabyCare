@@ -113,6 +113,7 @@
 		<label class="rec">${session.responsable?.tipoPlan}</label>
 		<label class="indic">IPS primaria: </label>
 		<label class="rec">${session.responsable?.ipsPrimaria}</label>
+		<label>${flash.message }</label>
 		<br>
 		</section>
 		<g:form action="datosResp">

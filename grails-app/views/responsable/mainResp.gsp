@@ -96,8 +96,7 @@
 			<div class="navresp1">
 				<ul>
 					<li><g:actionSubmit value="DATOS PERSONALES" action="datosResp" class="btn-nav" /></li>
-					<li><g:actionSubmit value="LISTADO RESPONSABILIDAD" action="handleLogin" class="btn-nav" /></li>
-					<li><g:actionSubmit value="MODIFICAR DATOS PACIENTE" action="handleLogin" class="btn-nav" /></li>
+					<li><g:actionSubmit value="MIS PEQUEÑOS" action="handleLogin" class="btn-nav" /></li>
 					<li><g:actionSubmit value="MODIFICAR DATOS PERSONALES" action="handleLogin" class="btn-nav" /></li>	
 				</ul>
 			</div>
