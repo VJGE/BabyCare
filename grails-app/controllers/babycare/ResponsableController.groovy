@@ -12,9 +12,10 @@ class ResponsableController {
 	static scaffold = Responsable
 	def login(){}
 	def mainResp(){}
+	def datosResp(){}
 	def handleLogin(){
-	def responsable = Responsable.findByDocumento(params.documento)
-	def contra = Responsable.findByContrasenia(params.contrasenia)
+		def responsable = Responsable.findByDocumento(params.documento)
+		def contra = Responsable.findByContrasenia(params.contrasenia)
 		if(!responsable){
 			flash.message='Usuario no encontrado'
 			redirect(action:'login')
