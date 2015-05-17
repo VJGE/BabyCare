@@ -1,0 +1,37 @@
+
+#busqueda{
+	margin-top: 10%;
+	float: left;
+	position: relative;
+	background-color: #5CA8D3;
+	max-width: 30%;
+	padding: 2%;
+	}
+
+#Consultas_hoy{
+	margin-top: 10%;
+	float: left;
+	width: 33%;
+	padding: 2%;
+}
+
+#usuario{
+	margin-top: 10%;
+	float: right;
+	margin-right: 2%;
+	position: relative;
+	max-width: 30%;
+	background-color: #5CA8D3;
+	padding: 1.2%;
+}
+
+#nuevoPaciente{
+	text-align: center;
+}
+
+.buttons {
+	margin-top: 2%;
+	margin-left: 0;
+	max-width: 100%;
+}
+

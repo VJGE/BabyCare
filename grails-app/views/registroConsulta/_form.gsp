@@ -29,12 +29,12 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'historiaMedica', 'error')} required">
-	<label for="historiaMedica">
-		<g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" />
+<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'historiaClinica', 'error')} required">
+	<label for="historiaClinica">
+		<g:message code="registroConsulta.historiaClinica.label" default="Historia Clinica" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select id="historiaMedica" name="historiaMedica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaMedica?.id}" class="many-to-one"/>
+	<g:select id="historiaClinica" name="historiaClinica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${registroConsultaInstance?.historiaClinica?.id}" class="many-to-one"/>
 
 </div>
 

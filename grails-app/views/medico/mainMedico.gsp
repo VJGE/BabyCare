@@ -23,6 +23,9 @@
 				<a class="regular">Paciente 4</a><br>
 				
 			</div>
+			<div id="nuevoPacinete">
+				<button type="button" class="btn btn-lg btn-danger">Nuevo Paciente</button>
+			</div>
 		</div>
 		
 		<div id="Consultas_hoy">
