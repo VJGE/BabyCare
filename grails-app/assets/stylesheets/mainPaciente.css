@@ -57,40 +57,57 @@
 			}
 
 /* REGULAR */
-
-button.regular, .buttons a.regular{
-    color:#000000;
-    width: 250px;
-	height: 40px;
+.buttons li{
+	list-style-type:none;
+}
+.button a, .buttons a{
+	width:245px;
+	height:40px;
+	color:#000000;
 	font-size:1.25em;
+	border-radius:0.3em;
+	text-decoration:none;
+	display: block;
+}
+
+.buttons a.datos{
+	background-image:url(../images/boy31.png);
+}
+
+.buttons a.historia{
+	background-image:url(../images/historia.png);
+}
+
+.buttons a.vacunas{
+	background-image:url(../images/vacunas.png);
+}
+
+.buttons a.citas{
+	background-image:url(../images/citas.png);
+}
+
+.buttons a.medicamentos{
+	background-image:url(../images/medicamentos.png);
+}
+
+.buttons a.desarrollo{
+	background-image:url(../images/desarrollo.png);
+}
+
+.buttons a.datos, .buttons a.historia, .buttons a.vacunas, .buttons a.citas, .buttons a.medicamentos, .buttons a.desarrollo{
+	background-position:0.7em center;
+	background-repeat:no-repeat;
+	text-indent: 30px;
 	text-decoration:none;
 }
-.buttons a.regular:hover, button.regular:hover{
+
+.buttons a.datos:hover, .buttons a.historia:hover, .buttons a.vacunas:hover, .buttons a.citas:hover, .buttons a.medicamentos:hover, .buttons a.desarrollo:hover{
     background-color:#cecece;
     border:1px solid #ffffff;
     color:#000000;
 }
-.buttons a.regular:active{
+.buttons a.datos:active, .buttons a.historia:active,.buttons a.vacunas:active, .buttons a.citas:active, .buttons a.medicamentos:active, .buttons a.desarrollo:active{
     background-color:#6299c5;
     border:1px solid #6299c5;
     color:#fff;
-}
-
-.imagenB{
-	background-image:url(../images/boy31.png);
-}
-.imagen2{
-	background-image:url(../images/historia.png);
-}
-.imagen3{
-	background-image:url(../images/vacunas.png);
-}
-.imagen4{
-	background-image:url(../images/citas.png);
-}
-.imagen5{
-	background-image:url(../images/medicamentos.png);
-}
-.imagen6{
-	background-image:url(../images/desarrollo.png);
 }

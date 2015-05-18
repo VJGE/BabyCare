@@ -14,8 +14,6 @@
 		<div id="imagen_medico"> 
 				<asset:image src="doctor.png" alt="Medico" width="350" height="263" id="imagdoc"/>
 		<g:form action="handleLogin" method="post" class="form-signin">
-			
-			
 	        <h2 class="clase_login_encabezado">Inicie sesión</h2>
 	        <div class=loginSep>
 	        <g:textField name="documento" value="${medico?.documento}" type="text" id="inputDocumento" class="clase_login" placeholder="Numero de documento" />
