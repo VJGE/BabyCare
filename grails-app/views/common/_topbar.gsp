@@ -8,6 +8,7 @@
 	<nobr>
 		<g:if test="${session.medico}">
 			<b>${session.medico?.nombre}&nbsp;${session.medico?.apellido}</b>
+			<button type="button" class="btn btn-lg btn-danger">Inicio</button>
 			<g:link controller="Medico" action="logout"><g:message /> 
 			<button type="button" class="btn btn-lg btn-danger">Cerrar sesión</button>
 			</g:link>
@@ -15,11 +16,14 @@
 		<g:else>
 			<g:if test="${session.responsable}">
 				<b>${session.responsable?.nombre}&nbsp;${session.responsable?.apellido}</b>
+				<button type="button" class="btn btn-lg btn-danger">Inicio</button>
 				<g:link controller="Responsable" action="logout"><g:message /> 
 				<button type="button" class="btn btn-lg btn-danger">Cerrar sesión</button>
+				
 				</g:link>
 			</g:if>
-			<g:else>			
+			<g:else>
+				<button type="button" class="btn btn-lg btn-danger">Inicio</button>			
 				<g:link controller ="Medico" action="login">
 					<button type="button" class="btn btn-lg btn-danger">Médico</button>
 				</g:link>

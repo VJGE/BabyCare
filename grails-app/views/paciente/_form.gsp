@@ -20,6 +20,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'sexo', 'error')} required">
+	<label for="sexo">
+		<g:message code="paciente.sexo.label" default="Sexo" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select name="sexo" from="${pacienteInstance.constraints.sexo.inList}" required="" value="${pacienteInstance?.sexo}" valueMessagePrefix="paciente.sexo"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'tipoDocumento', 'error')} required">
 	<label for="tipoDocumento">
 		<g:message code="paciente.tipoDocumento.label" default="Tipo Documento" />
@@ -34,7 +43,7 @@
 		<g:message code="paciente.documento.label" default="Documento" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="documento" required="" value="${pacienteInstance?.documento}"/>
+	<g:textField name="documento" pattern="${pacienteInstance.constraints.documento.matches}" required="" value="${pacienteInstance?.documento}"/>
 
 </div>
 
@@ -44,6 +53,15 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:field name="edad" type="number" value="${pacienteInstance.edad}" required=""/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'edadMeses', 'error')} required">
+	<label for="edadMeses">
+		<g:message code="paciente.edadMeses.label" default="Edad Meses" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:field name="edadMeses" type="number" min="1" max="11" value="${pacienteInstance.edadMeses}" required=""/>
 
 </div>
 
@@ -169,7 +187,7 @@
 		<g:message code="paciente.rh.label" default="Rh" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:select name="rh" from="${pacienteInstance.constraints.rh.inList}" required="" value="${fieldValue(bean: pacienteInstance, field: 'rh')}" valueMessagePrefix="paciente.rh"/>
+	<g:select name="rh" from="${pacienteInstance.constraints.rh.inList}" required="" value="${pacienteInstance?.rh}" valueMessagePrefix="paciente.rh"/>
 
 </div>
 
@@ -218,21 +236,30 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'historiaClinica', 'error')} ">
+	<label for="historiaClinica">
+		<g:message code="paciente.historiaClinica.label" default="Historia Clinica" />
+		
+	</label>
+	<g:select id="historiaClinica" name="historiaClinica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" value="${pacienteInstance?.historiaClinica?.id}" class="many-to-one" noSelection="['null': '']"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'foto', 'error')} ">
+	<label for="foto">
+		<g:message code="paciente.foto.label" default="Foto" />
+		
+	</label>
+	<input type="file" id="foto" name="foto" />
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'direccion', 'error')} required">
 	<label for="direccion">
 		<g:message code="paciente.direccion.label" default="Direccion" />
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="direccion" required="" value="${pacienteInstance?.direccion}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: pacienteInstance, field: 'historiaClinica', 'error')} required">
-	<label for="historiaClinica">
-		<g:message code="paciente.historiaClinica.label" default="Historia Clinica" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:select id="historiaClinica" name="historiaClinica.id" from="${babycare.HistoriaClinica.list()}" optionKey="id" required="" value="${pacienteInstance?.historiaClinica?.id}" class="many-to-one"/>
 
 </div>
 
