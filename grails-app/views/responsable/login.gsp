@@ -9,7 +9,10 @@
 			${flash.message }
 			</div>
 		</g:if>
+		
 		<div id="loginContainer" class="container"> 
+		<div id="imagen_medico"> 
+				<asset:image src="padre.png" alt="Medico" width="350" height="263" id="imagdoc"/>
 		<g:form action="handleLogin" method="post" class="form-signin">
 	        <h2 class="clase_login_encabezado">Inicie sesión</h2>
 	        <div class=loginSep>
@@ -24,7 +27,7 @@
 	          </label>
 	        </div>
 	        <g:actionSubmit value="Ingresar" action="handleLogin" class="btn btn-log" />
-      </g:form>
+      </g:form></div>
       </div>
 	</body>
 </html>
