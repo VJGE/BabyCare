@@ -24,7 +24,9 @@
 				
 			</div>
 			<div id="nuevoPacinete">
-				<button type="button" class="btn btn-lg btn-danger">Nuevo Paciente</button>
+				<g:link controller ="paciente" action="create">
+					<button type="button" class="btn btn-lg btn-danger">Nuevo Paciente</button>
+				</g:link>
 			</div>
 		</div>
 		

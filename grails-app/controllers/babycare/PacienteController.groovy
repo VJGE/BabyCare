@@ -46,6 +46,7 @@ class PacienteController {
             }
             '*' { respond pacienteInstance, [status: CREATED] }
         }
+		redirect(controller:"HistoriaClinica",action:"create")
     }
 
     def edit(Paciente pacienteInstance) {
