@@ -14,13 +14,14 @@
 			<a href="datosResp" class="datos"> DATOS PERSONALES</a>
 			</li>
 			<li>
-			<a href="mainResp" class="misPeq"> MIS PEQUEÑOS </a>
+			<a href="listaPacientes" class="misPeq"> MIS PEQUEÑOS </a>
 			</li>
 			<li>
 			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>
 			</li>
 			</ul>
 		</div>
+
 			<div class="contentresp1">
 				<h1 class="text-center">RECOMENDACIONES</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
