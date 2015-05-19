@@ -3,52 +3,7 @@
 	<head>
 		<title>Baby Care</title>
 		<meta name="layout" content="main" />
-		<style type="text/css">
-			.btn-nav {
-				width: 100px;
-				height: 50px;
-				margin-top: 5%;
-				display: block;
-				padding: 10px;
-				border-radius:5px;
-				border: 3px outset gray;
-				background-color: #A9D0F5;
-				color: black;
-				font-weight: 400;
-				text-decoration: none;
-				margin-left:40%;
-			}
-			.btn-nav:hover {
-				border: 3px inset gray;
-				background-color: #819FF7;
-				color: white;
-			}
-			.section-Personal{
-				margin-top: 10%;
-				margin-left: 5%;
-			}
-			.indic{
-				float:left;
-				margin-left: 5%;
-				width: 100px;
-			}
-			.rec{
-				width:250px;
-				height:25px;
-				border:1px solid black;
-				float:left;
-				padding-left:5px;
-				padding-top:2px;
-			}
-			.tittle{
-				margin-top: 1%;
-				margin-left: 35%;
-			}
-			.section-Personal2{
-				margin-top: 2%;
-				margin-left: 5%;
-			}
-		</style>
+		<asset:stylesheet src="mainResponsable.css"/>
 	</head>
 	<body>
 		<section class="section-Personal">
@@ -113,10 +68,11 @@
 		<label class="rec">${session.responsable?.tipoPlan}</label>
 		<label class="indic">IPS primaria: </label>
 		<label class="rec">${session.responsable?.ipsPrimaria}</label>
+		<label>${flash.message }</label>
 		<br>
 		</section>
 		<g:form action="datosResp">
-			<g:actionSubmit value="Regresar" action="mainResp" class="btn-nav" />
+			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
 		</g:form>
 	</body>
 </html>
