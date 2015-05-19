@@ -38,3 +38,30 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: historiaClinicaInstance, field: 'paciente', 'error')} required">
+	<label for="paciente">
+		<g:message code="historiaClinica.paciente.label" default="Paciente" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="paciente" name="paciente.id" from="${babycare.Paciente.list()}" optionKey="id" required="" value="${historiaClinicaInstance?.paciente?.id}" class="many-to-one"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: historiaClinicaInstance, field: 'registrosConsultas', 'error')} ">
+	<label for="registrosConsultas">
+		<g:message code="historiaClinica.registrosConsultas.label" default="Registros Consultas" />
+		
+	</label>
+	
+<ul class="one-to-many">
+<g:each in="${historiaClinicaInstance?.registrosConsultas?}" var="r">
+    <li><g:link controller="registroConsulta" action="show" id="${r.id}">${r?.encodeAsHTML()}</g:link></li>
+</g:each>
+<li class="add">
+<g:link controller="registroConsulta" action="create" params="['historiaClinica.id': historiaClinicaInstance?.id]">${message(code: 'default.add.label', args: [message(code: 'registroConsulta.label', default: 'RegistroConsulta')])}</g:link>
+</li>
+</ul>
+
+
+</div>
+

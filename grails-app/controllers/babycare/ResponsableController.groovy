@@ -10,9 +10,17 @@ class ResponsableController {
 
 	static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 	static scaffold = Responsable
+	
 	def login(){}
+	
 	def mainResp(){}
+	
 	def datosResp(){}
+	
+	def inicio(){
+		render(view:"/index")
+	}
+	
 	def handleLogin(){
 		def responsable = Responsable.findByDocumento(params.documento)
 		def contra = Responsable.findByContrasenia(params.contrasenia)
@@ -34,7 +42,7 @@ class ResponsableController {
 	def logout(){
 		if(session.responsable){
 			session.responsable=null
-			redirect(action:'login')
+			render(view:"/index")
 		}
 	}
 	

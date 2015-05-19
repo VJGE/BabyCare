@@ -59,6 +59,26 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${historiaClinicaInstance?.paciente}">
+				<li class="fieldcontain">
+					<span id="paciente-label" class="property-label"><g:message code="historiaClinica.paciente.label" default="Paciente" /></span>
+					
+						<span class="property-value" aria-labelledby="paciente-label"><g:link controller="paciente" action="show" id="${historiaClinicaInstance?.paciente?.id}">${historiaClinicaInstance?.paciente?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${historiaClinicaInstance?.registrosConsultas}">
+				<li class="fieldcontain">
+					<span id="registrosConsultas-label" class="property-label"><g:message code="historiaClinica.registrosConsultas.label" default="Registros Consultas" /></span>
+					
+						<g:each in="${historiaClinicaInstance.registrosConsultas}" var="r">
+						<span class="property-value" aria-labelledby="registrosConsultas-label"><g:link controller="registroConsulta" action="show" id="${r.id}">${r?.encodeAsHTML()}</g:link></span>
+						</g:each>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:historiaClinicaInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

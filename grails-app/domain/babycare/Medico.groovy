@@ -13,6 +13,7 @@ class Medico{
 	String registroMedico
 	String usuario
 	String contrasenia
+	
 
 	static hasMany = [consultas: RegistroConsulta, pacientes:Paciente]
 	

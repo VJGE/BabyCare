@@ -23,7 +23,9 @@ html * {
 }
 
 body {
-	background: #ffffff;
+	background-image: url("../images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-size: 1800px 2000px;
 	color: #5CA8D3;
 	margin: 0 auto;
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
@@ -68,6 +70,15 @@ body {
 .clase_login_encabezado{
 	margin-top: 100px;
 	margin-left: 2px;
+}
+#loginContainer #imagen_medico{
+	margin-left: -180px;
+	float: left;
+	 display: flex;
+    align-items: center;
+}
+#imagdoc{
+	margin-top: 70px;
 }
 .btn{
 	background-color: #5CA8D3;
@@ -168,7 +179,7 @@ img {
 	clear: both;
 	font-size: 1em;
 	margin-top: 1em;
-	padding: 1.5em;
+	padding: 1.9em;
 	min-height: 1em;
 }
 
@@ -655,11 +666,13 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+/*Topbar y footer */
 		
 #topbar{
 	text align:left;
 	margin: -30px auto;
-	padding: 87px 0 8%;
+	padding: 30px 0 8%;
 	background: #5CA8D3;
 }
 
@@ -674,6 +687,80 @@ a.skip {
 	float: left;
 }
 
+.botones li{
+	list-style-type:none;
+	text-align:center;
+}
+
+.botones a{
+	width:150px;
+	height:30px;
+	border-radius:0.5em;
+	display: flex;
+    float:left;
+    margin:0 7px 0 0;
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:12px;
+    line-height:130%;
+    font-weight:bold;
+    color:#565656;
+    cursor:pointer;
+    padding:5px 10px 6px 7px;
+    font-size:16px;
+    font-align:center;
+    text-decoration: none;
+}
+
+.botones a.nombre{
+	width:350px;
+	margin-top: -70px;
+	background-color:transparent;
+	border:none;
+}
+
+.botones a.cerrar{
+	margin-left:-150px;
+	margin-top:-30px;
+	background-image:url(../images/cerrar.png);
+}
+.botones a.medico{
+	margin-left:-500px;
+	margin-top:50px;
+	background-image:url(../images/medico.png);
+}
+.botones a.responsable{
+	margin-left:-330px;
+	margin-top:50px;
+	background-image:url(../images/responsable.png);
+}
+.botones a.inicio{
+	margin-left:30px;
+	margin-top:50px;
+	background-image:url(../images/inicio.png);
+}
+
+.botones a.inicio, a.medico, a.responsable,a.cerrar{
+	background-position:0.7em center;
+	background-repeat:no-repeat;
+	text-indent: 30px;
+	text-decoration:none;
+}
+.botones a.inicio:hover , a.medico:hover, a.responsable:hover, a.cerrar:hover{
+	background-color:#cecece;
+    border:1px solid #ffffff;
+    color:#000000;
+    text-decoration:none;
+}
+.botones a.inicio:active, a.medico:active, a.responsable:active, a.cerrar:active{
+	background-color:#6299c5;
+    border:1px solid #6299c5;
+    color:#fff;
+}
+
 #footer{
 	clear:both;
 	text-align: center;
@@ -681,6 +768,8 @@ a.skip {
 	border-top: 1px solid #333;
 	margin-top:80px;
 }
+
+/*Fin topbar y footer*/
 
 .buttons{
 	width:250px;
@@ -713,3 +802,7 @@ a.skip {
 	width: 30%;
 	background-color: #329bd7;
 }
+/*Fin mainMedico*/
+
+
+

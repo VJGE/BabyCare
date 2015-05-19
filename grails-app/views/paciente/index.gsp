@@ -28,13 +28,13 @@
 					
 						<g:sortableColumn property="apellido" title="${message(code: 'paciente.apellido.label', default: 'Apellido')}" />
 					
+						<g:sortableColumn property="sexo" title="${message(code: 'paciente.sexo.label', default: 'Sexo')}" />
+					
 						<g:sortableColumn property="tipoDocumento" title="${message(code: 'paciente.tipoDocumento.label', default: 'Tipo Documento')}" />
 					
 						<g:sortableColumn property="documento" title="${message(code: 'paciente.documento.label', default: 'Documento')}" />
 					
 						<g:sortableColumn property="edad" title="${message(code: 'paciente.edad.label', default: 'Edad')}" />
-					
-						<g:sortableColumn property="tipoAfiliado" title="${message(code: 'paciente.tipoAfiliado.label', default: 'Tipo Afiliado')}" />
 					
 					</tr>
 				</thead>
@@ -46,13 +46,13 @@
 					
 						<td>${fieldValue(bean: pacienteInstance, field: "apellido")}</td>
 					
+						<td>${fieldValue(bean: pacienteInstance, field: "sexo")}</td>
+					
 						<td>${fieldValue(bean: pacienteInstance, field: "tipoDocumento")}</td>
 					
 						<td>${fieldValue(bean: pacienteInstance, field: "documento")}</td>
 					
 						<td>${fieldValue(bean: pacienteInstance, field: "edad")}</td>
-					
-						<td>${fieldValue(bean: pacienteInstance, field: "tipoAfiliado")}</td>
 					
 					</tr>
 				</g:each>

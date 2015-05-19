@@ -4,11 +4,13 @@ class Paciente{
 	
 	String nombre
 	String apellido
+	String sexo
 	String tipoDocumento
 	String documento
 	int telefono
 	String direccion
 	int edad
+	int edadMeses
 	String tipoAfiliado
 	String ciudad
 	String estadoCivil
@@ -22,22 +24,26 @@ class Paciente{
 	double pc
 	String tipoNacimiento
 	String grupoSanguineo
-	char rh
+	String rh
 	Date fechaNacimiento
 	double pesoNacimiento
 	double tallaNacimiento
 	double pcNacimiento
 	int edadGestacional
+	byte[] foto
+	HistoriaClinica historiaClinica
 	
 	static hasMany = [padres:Padre, vacunas:Vacuna]
-	static belongsTo = [responsable:Responsable, historiaClinica:HistoriaClinica]
+	static belongsTo = [responsable:Responsable]
 	
-    static constraints = {
+	static constraints = {
 		nombre(blank : false, nullable : false)
 		apellido(blank : false, nullable : false)
+		sexo(inList:["Maculino","Femenino"])
 		tipoDocumento(nullable : false, inList : ["Tarjeta de identidad","Cedula","Pasaporte","Registro civil"])
 		documento(blank : false, nullable : false, unique : true,length : 5..20,matches : "([A-Z]*)([0-9]+)")
 		edad(blank : false, nullable : false, size : 1..120)
+		edadMeses(min:1 , max:11)
 		tipoAfiliado (blank: false , inList:["Contribuyente","Beneficiario"] );
 		ciudad (blank: false , size: 2..20);
 		estadoCivil (blank: false , inList:["Soltero","Casado","Union libre","Divorciado","Viudo"])
@@ -57,5 +63,7 @@ class Paciente{
 		tallaNacimiento (blank:false);
 		pcNacimiento (blank:false);
 		edadGestacional (blank:false, max: 45);
-    }
+		historiaClinica(nullable:true);
+		foto (nullable:true);
+	}
 }
