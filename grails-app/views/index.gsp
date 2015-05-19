@@ -63,10 +63,10 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h2>Sigue de cerca el crecimiento de tu niño!</h2>
-        <p>Ahora podras tener acceso a los reportes y registros de todo lo relacionado con tus hijos. BabyCare siempre a tu lado, apoyando esa hermosa labor de ser padre</p>
+        <h2>Sigue de cerca el crecimiento de tu hijo!</h2>
+        <p>Ahora podras tener acceso a los reportes y registros de todo lo relacionado con tus hijos. BabyCare siempre a tu lado, apoyando esa hermosa labor de ser padre.</p>
         <p>
-          <a class="btn btn-lg btn-primary" href="http://www.minsalud.gov.co/salud/publica/Vacunacion/Paginas/pai.aspx" role="button">Informacion de vacunas &raquo;</a>
+          <a class="btn btn-lg btn-primary" href="http://www.minsalud.gov.co/salud/publica/Vacunacion/Paginas/pai.aspx" role="button">Información de vacunas &raquo;</a>
         </p>
       </div>
 
@@ -79,19 +79,19 @@
         <div class="col-lg-4">
           <asset:image class="img-circle" src="bebe.jpg" width="140" height="140"/>
           <h2>Pacientes</h2>
-          <p>Ten siempre en respaldo la información más actualizada de esas personitas tan importantes, consulta la información y revisa el progreso</p>
+          <p>Ten siempre en respaldo la información más actualizada de esas personitas tan importantes, consulta la información y revisa el progreso.</p>
           <p><a class="btn btn-default" href="#" role="button">Más información &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <asset:image class="img-circle" src="medico.jpg" width="140" height="140"/>
-          <h2>Medicos</h2>
-          <p>El respaldo en todos los procesos del profesional de la salud, brinda un seguimiento cuidadoso, que deja de lado las molestias de muchas hojas</p>
+          <h2>Médicos</h2>
+          <p>El respaldo en todos los procesos del profesional de la salud, brinda un seguimiento cuidadoso, que deja de lado las molestias de muchas hojas.</p>
           <p><a class="btn btn-default" href="#" role="button">Profesionales de la salud &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <asset:image class="img-circle" src="papas.jpg" width="140" height="140"/>
           <h2>Responsables</h2>
-          <p>Toda persona a cargo de un paciente tiene el acceso a revisar los datos y la historia clínica, ya sean los padres o acudientes</p>
+          <p>Toda persona a cargo de un paciente tiene el acceso a revisar los datos y la historia clínica, ya sean los padres o acudientes.</p>
           <p><a class="btn btn-default" href="#" role="button">Politicas de uso &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->

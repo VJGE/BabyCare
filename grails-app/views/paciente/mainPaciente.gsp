@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Baby Care/Medico</title>
+		<title>Baby Care/Paciente</title>
 		<meta name="layout" content="main" />
 		<asset:stylesheet src="mainPaciente.css"/>
 	</head>
@@ -9,7 +9,7 @@
 		<div class="buttons">
 		<ul>
 			<li>
-			<a href="" class="datos"> Datos personales</a>
+				<a href="" class="datos"> Datos personales</a>
 			</li>
 			<li>
 				<a href="" class="historia"> Historia clinica</a>
