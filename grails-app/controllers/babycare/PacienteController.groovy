@@ -10,7 +10,7 @@ class PacienteController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-	def mainPaciente(){}
+	def mainPaciente(){};
 	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -46,6 +46,7 @@ class PacienteController {
             }
             '*' { respond pacienteInstance, [status: CREATED] }
         }
+		redirect(controller:"HistoriaClinica",action:"create")
     }
 
     def edit(Paciente pacienteInstance) {

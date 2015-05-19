@@ -7,13 +7,13 @@ class HistoriaClinica {
 	String lugarHistoria
 	int numeroHistoria
 	
-	static belongsTo = [paciente:Paciente]
+	static belongsTo=[paciente:Paciente]
 	static hasMany = [registrosConsultas:RegistroConsulta]
 	
-    static constraints = {
+	static constraints = {
 		codigoPlanilla (blank: false, nullable: false, matches: "^(?=.*[A-Z])(?=.*[0-9])([A-Z0-9]+)");
 		fechaHistoria (blank: false, nullable: false);
 		lugarHistoria (blank: false);
 		numeroHistoria (blank: false, nullable:false, minsize: 7..10);
-    }
+	}
 }

@@ -23,6 +23,11 @@
 				<a class="regular">Paciente 4</a><br>
 				
 			</div>
+			<div id="nuevoPacinete">
+				<g:link controller ="paciente" action="create">
+					<button type="button" class="btn btn-lg btn-danger">Nuevo Paciente</button>
+				</g:link>
+			</div>
 		</div>
 		
 		<div id="Consultas_hoy">

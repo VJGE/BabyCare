@@ -50,11 +50,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${registroConsultaInstance?.historiaMedica}">
+				<g:if test="${registroConsultaInstance?.historiaClinica}">
 				<li class="fieldcontain">
-					<span id="historiaMedica-label" class="property-label"><g:message code="registroConsulta.historiaMedica.label" default="Historia Medica" /></span>
+					<span id="historiaClinica-label" class="property-label"><g:message code="registroConsulta.historiaClinica.label" default="Historia Clinica" /></span>
 					
-						<span class="property-value" aria-labelledby="historiaMedica-label"><g:link controller="historiaClinica" action="show" id="${registroConsultaInstance?.historiaMedica?.id}">${registroConsultaInstance?.historiaMedica?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="historiaClinica-label"><g:link controller="historiaClinica" action="show" id="${registroConsultaInstance?.historiaClinica?.id}">${registroConsultaInstance?.historiaClinica?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>
