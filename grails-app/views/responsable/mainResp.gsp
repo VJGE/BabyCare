@@ -21,6 +21,7 @@
 			</li>
 			</ul>
 		</div>
+
 			<div class="contentresp1">
 				<h1 class="text-center">RECOMENDACIONES</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
