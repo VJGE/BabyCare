@@ -14,7 +14,7 @@
 			<a href="datosResp" class="datos"> DATOS PERSONALES</a>
 			</li>
 			<li>
-			<a href="mainResp" class="misPeq"> MIS PEQUEÑOS </a>
+			<a href="listaPacientes" class="misPeq"> MIS PEQUEÑOS </a>
 			</li>
 			<li>
 			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>
