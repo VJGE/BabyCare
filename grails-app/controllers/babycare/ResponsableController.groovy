@@ -25,13 +25,13 @@ class ResponsableController {
 	
 	def handleLogin(){
 		def responsable = Responsable.findByDocumento(params.documento)
-		def contra = Responsable.findByContrasenia(params.contrasenia)
+		def contra = params.contrasenia
 		if(!responsable){
 			flash.message='Usuario no encontrado'
 			redirect(action:'login')
 			return
 		}else{
-			 if(!contra){
+			 if(responsable.contrasenia!=contra){
 				 flash.message='Contraseña incorrecta'
 				 redirect(action:'login')
 				 return
