@@ -25,10 +25,10 @@
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>
 			<div class="contentresp1">
-				<asset:image src="consejo2.jpg" />
+				<asset:image src="consejo2.png" />
 			</div>
 			<div class="contentresp2">
-				<asset:image src="bebecomiendo.jpg" />
+				<asset:image src="bebecomiendo.png" />
 			</div>
 		</section>	
 		<section class="section-content2">
