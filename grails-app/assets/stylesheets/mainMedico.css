@@ -1,18 +1,21 @@
 
 #busqueda{
+	margin-left:-10%;
 	margin-top: 10%;
 	float: left;
 	position: relative;
 	background-color: #5CA8D3;
 	max-width: 30%;
 	padding: 2%;
+	margin-bottom: 5%;
 	}
 
 #Consultas_hoy{
-	margin-top: 10%;
+	margin-top: 7%;
 	float: left;
 	width: 33%;
 	padding: 2%;
+	margin-bottom: 5%;
 }
 
 #usuario{
@@ -23,6 +26,7 @@
 	max-width: 30%;
 	background-color: #5CA8D3;
 	padding: 1.2%;
+	margin-bottom: 5%;
 }
 
 #nuevoPaciente{
@@ -30,6 +34,7 @@
 }
 
 .buttons {
+	margin-bottom: 5%;
 	margin-top: 2%;
 	margin-left: 0;
 	max-width: 100%;
