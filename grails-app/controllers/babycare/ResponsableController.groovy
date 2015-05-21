@@ -17,6 +17,8 @@ class ResponsableController {
 	
 	def datosResp(){}
 	
+	def listaPacientes(){}
+	
 	def inicio(){
 		render(view:"/index")
 	}
@@ -29,7 +31,7 @@ class ResponsableController {
 			redirect(action:'login')
 			return
 		}else{
-			 if(contra!=responsable.contrasenia){
+			 if(responsable.contrasenia!=contra){
 				 flash.message='Contraseña incorrecta'
 				 redirect(action:'login')
 				 return
