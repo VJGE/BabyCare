@@ -9,9 +9,9 @@
 		<section class="section-Personal">
 		<label class="indic">Nombre: </label>
 		<g:form action="listaPacientes">
-			<g:each in="${session.paciente}">
- 		  	<p>Nombre: ${it.nombre}</p>
-			</g:each>
+			<g:each in="${session.responsable.paciente}">
+ 		  		<p>Nombre: ${it.nombre}</p>
+ 		  	</g:each>
 		</g:form>
 		</section>
 		<g:form action="datosResp">

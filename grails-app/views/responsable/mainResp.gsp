@@ -21,22 +21,14 @@
 			</li>
 			</ul>
 		</div>
-
+		<div class="tittlecontent">
+			<h1 class="text-center">RECOMENDACIONES</h1>
+		</div>
 			<div class="contentresp1">
-				<h1 class="text-center">RECOMENDACIONES</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				<asset:image src="consejo2.jpg" />
+			</div>
+			<div class="contentresp2">
+				<asset:image src="bebecomiendo.jpg" />
 			</div>
 		</section>	
 		<section class="section-content2">
