@@ -7,7 +7,7 @@
 	</head>
 	<body>
 		<section class="section-Personal">
-		<label class="tittle">PERSONA RESPONSABLE</label>
+		<label class="tittle">RESPONSABLE</label>
 		<br>
 		<br>
 		<br>
@@ -26,7 +26,7 @@
 		<hr width="90%" style="border:1px solid black;">
 		</section>
 		<section class="section-Personal2">
-		<label class="tittle">INFORMACION DE CONTACTO</label>
+		<label class="tittle">CONTACTO</label>
 		<br>
 		<br>
 		<br>
@@ -36,7 +36,7 @@
 		<label class="rec">${session.responsable?.telefono}</label>
 		<br>
 		<hr width="90%" style="border:1px solid black;">
-		<label class="tittle">INFORMACION FAMILIAR Y OCUPACIONAL</label>
+		<label class="tittle">FAMILIAR Y OCUPACIONAL</label>
 		<br>
 		<br>
 		<br>
@@ -53,7 +53,7 @@
 		<label class="rec">${session.responsable?.nivelSalarial}</label>
 		<br>
 		<hr width="90%" style="border:1px solid black;">
-		<label class="tittle">INFORMACION DE EPS</label>
+		<label class="tittle">EPS</label>
 		<br>
 		<br>
 		<br>
@@ -71,8 +71,8 @@
 		<label>${flash.message }</label>
 		<br>
 		</section>
-		<g:form action="datosResp">
-			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
-		</g:form>
+		<div class="botones2">
+			<a href="mainResp" class="regresar"> REGRESAR</a>
+		</div>
 	</body>
 </html>

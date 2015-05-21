@@ -1,6 +1,7 @@
 .section-content {
 	width: 1100px;
 	margin-top: 10%;
+	margin-left: 50px;
 	}
 .section-content2 {
 	width: 1100px;
@@ -12,12 +13,24 @@
 	float: left;
 	border:3px outset gray;
 	}
+.tittlecontent{
+	margin-top:-150px;
+	border: 0px;
+	background-color: transparent;
+}
 .contentresp1 {
-	margin: -130px 0px 0px 350px;
-	width: 778px;
-	background-color: #CED8F6;
+	margin: 30px 0px 0px 400px;
+	width: 400px;
+	background-color: transparent;
 	float: left;
-	border: 1px outset gray;
+	border: 0px;
+	}
+.contentresp2 {
+	margin: -540px 0px 0px 700px;
+	width: 700px;
+	background-color: transparent;
+	float: left;
+	border: 0px;
 	}
 .down-boton {
 	margin: 20px;
@@ -32,6 +45,7 @@ section {
 	}
 .text-center {
 	text-align: center;
+	padding-left:600px;
 	}
 .clear {
 	clear: both;
@@ -118,7 +132,9 @@ section {
 	}
 .tittle{
 	margin-top: 1%;
-	margin-left: opx;
+	margin-left: 0px;
+	font-family: inherit;
+  	font-size: x-large;
 	}
 .section-Personal2{
 		margin-top: 2%;
@@ -148,8 +164,13 @@ section {
 
 			
 .text-center {
-				text-align: center;
-			}
+	font-family: "Homer Simpson", cursive;
+  	font-size: 40px;
+ 	line-height: 0;
+  	color: black;
+  	background-color: #fff;
+  	padding-right:80px
+}
 
 /* REGULAR */
 .buttons li{
@@ -231,19 +252,27 @@ section {
 	background-image:url(../images/turn20.png);
 }
 
-.botones2 a.chat, a.notificaciones{
+.botones2 a.regresar{
+	width:150px;
+	margin-left:300px;
+	margin-top:50px;
+	background-image:url(../images/back57.png);
+	background-color:#BDBDBD;
+}
+
+.botones2 a.chat, a.notificaciones, a.regresar{
 	background-position:0.7em center;
 	background-repeat:no-repeat;
 	text-indent: 30px;
 	text-decoration:none;
 }
-.botones2 a.chat:hover, a.notificaciones:hover{
+.botones2 a.chat:hover, a.notificaciones:hover, a.regresar:hover{
 	background-color:#cecece;
     border:1px solid #ffffff;
     color:#000000;
     text-decoration:none;
 }
-.botones2 a.chat:active, a.notificaciones:active{
+.botones2 a.chat:active, a.notificaciones:active a.regresar:active{
 	background-color:#6299c5;
     border:1px solid #6299c5;
     color:#fff;

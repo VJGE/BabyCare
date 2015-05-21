@@ -17,7 +17,9 @@ class ResponsableController {
 	
 	def datosResp(){}
 	
-	def listaPacientes(){}
+	def listaPacientes(Responsable responsableInstance){
+		respond responsableInstance
+	}
 	
 	def inicio(){
 		render(view:"/index")
