@@ -670,7 +670,7 @@ a.skip {
 /*Topbar y footer */
 		
 #topbar{
-	text align:left;
+	text-align:left;
 	margin: -30px auto;
 	padding: 30px 0 8%;
 	background: #5CA8D3;
@@ -679,7 +679,7 @@ a.skip {
 #topbar #menu {
 	float:right;
 	width: 240px;
-	text align: center;
+	text-align: center;
 	front-size: 10px;
 }
 
