@@ -42,8 +42,10 @@
 		
 		<div id="usuario">
 			<h1 class="titulo_seccion"> Datos de usuario </h1>
-			 Nombre     cedula <br>
-			 cargo		cosas varias
+			 <p>${session.medico.nombre}</p><br>
+			 <p>${session.medico.apellido}</p><br>
+			 <p>${session.medico.documento}</p><br>
+			 <p>${session.medico.especialidad}</p><br>
 		</div>
 	</body>
 </html>
