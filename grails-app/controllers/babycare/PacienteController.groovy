@@ -11,6 +11,9 @@ class PacienteController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
 	def mainPaciente(){};
+	def datosPaciente(){};
+	def desarrolloPaciente(){};
+	def prueba(){};
 	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)

@@ -111,3 +111,17 @@
     border:1px solid #6299c5;
     color:#fff;
 }
+
+.graficas {
+	margin-left:200px;
+}
+
+.graficas label{
+	margin-top:100px;
+	margin-left:500px;
+}
+
+#charts{
+	margin-top:120px;
+	margin-bottom: 150px;
+}
