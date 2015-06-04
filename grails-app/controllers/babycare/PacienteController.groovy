@@ -10,10 +10,12 @@ class PacienteController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-	def mainPaciente(){};
-	def datosPaciente(){};
-	def desarrolloPaciente(){};
-	def prueba(){};
+	def mainPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
+	def desarrolloPaciente(){}
+	def prueba(){}
+	def datosPaciente(){}
 	
 	def mostrarImagen(){
 		

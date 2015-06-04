@@ -24,11 +24,31 @@
 			<thead>
 					<tr>
 					
+						<g:sortableColumn property="documentoPaciente" title="${message(code: 'consulta.documentoPaciente.label', default: 'Documento Paciente')}" />
+					
+						<g:sortableColumn property="documentoMedico" title="${message(code: 'consulta.documentoMedico.label', default: 'Documento Medico')}" />
+					
+						<g:sortableColumn property="date" title="${message(code: 'consulta.date.label', default: 'Date')}" />
+					
+						<g:sortableColumn property="finalizada" title="${message(code: 'consulta.finalizada.label', default: 'Finalizada')}" />
+					
+						<g:sortableColumn property="asistencia" title="${message(code: 'consulta.asistencia.label', default: 'Asistencia')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
 				<g:each in="${consultaInstanceList}" status="i" var="consultaInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+					
+						<td><g:link action="show" id="${consultaInstance.id}">${fieldValue(bean: consultaInstance, field: "documentoPaciente")}</g:link></td>
+					
+						<td>${fieldValue(bean: consultaInstance, field: "documentoMedico")}</td>
+					
+						<td><g:formatDate date="${consultaInstance.date}" /></td>
+					
+						<td><g:formatBoolean boolean="${consultaInstance.finalizada}" /></td>
+					
+						<td><g:formatBoolean boolean="${consultaInstance.asistencia}" /></td>
 					
 					</tr>
 				</g:each>

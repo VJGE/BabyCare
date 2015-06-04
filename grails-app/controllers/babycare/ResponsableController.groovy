@@ -17,7 +17,15 @@ class ResponsableController {
 	
 	def datosResp(){}
 	
-	def listaPacientes(){}
+	/*def listaPacientes(Integer max){
+		params.max = Math.min(max ?: 10, 100)
+		respond Responsable.list(params), model:[responsableInstanceCount: Responsable.count()]
+	}*/
+	
+	def listaPacientes(Responsable responsableInstance){
+		respond responsableInstance
+	}
+	
 	
 	def inicio(){
 		render(view:"/index")

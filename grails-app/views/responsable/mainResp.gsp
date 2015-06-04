@@ -14,7 +14,7 @@
 			<a href="datosResp" class="datos"> DATOS PERSONALES</a>
 			</li>
 			<li>
-			<a href="listaPacientes" class="misPeq"> MIS PEQUEÑOS </a>
+			<g:link action="listaPacientes" id="${session.responsable.id}">MIS PEQUEÑOS</g:link>
 			</li>
 			<li>
 			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>
@@ -25,10 +25,10 @@
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>
 			<div class="contentresp1">
-				<asset:image src="consejo2.png" />
+				<asset:image src="consejo2.jpg" />
 			</div>
 			<div class="contentresp2">
-				<asset:image src="bebecomiendo.png" />
+				<asset:image src="bebecomiendo.jpg" />
 			</div>
 		</section>	
 		<section class="section-content2">

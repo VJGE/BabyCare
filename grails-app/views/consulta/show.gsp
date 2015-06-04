@@ -23,6 +23,51 @@
 			</g:if>
 			<ol class="property-list consulta">
 			
+				<g:if test="${consultaInstance?.documentoPaciente}">
+				<li class="fieldcontain">
+					<span id="documentoPaciente-label" class="property-label"><g:message code="consulta.documentoPaciente.label" default="Documento Paciente" /></span>
+					
+						<span class="property-value" aria-labelledby="documentoPaciente-label"><g:fieldValue bean="${consultaInstance}" field="documentoPaciente"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${consultaInstance?.documentoMedico}">
+				<li class="fieldcontain">
+					<span id="documentoMedico-label" class="property-label"><g:message code="consulta.documentoMedico.label" default="Documento Medico" /></span>
+					
+						<span class="property-value" aria-labelledby="documentoMedico-label"><g:fieldValue bean="${consultaInstance}" field="documentoMedico"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${consultaInstance?.date}">
+				<li class="fieldcontain">
+					<span id="date-label" class="property-label"><g:message code="consulta.date.label" default="Date" /></span>
+					
+						<span class="property-value" aria-labelledby="date-label"><g:formatDate date="${consultaInstance?.date}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${consultaInstance?.finalizada}">
+				<li class="fieldcontain">
+					<span id="finalizada-label" class="property-label"><g:message code="consulta.finalizada.label" default="Finalizada" /></span>
+					
+						<span class="property-value" aria-labelledby="finalizada-label"><g:formatBoolean boolean="${consultaInstance?.finalizada}" /></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${consultaInstance?.asistencia}">
+				<li class="fieldcontain">
+					<span id="asistencia-label" class="property-label"><g:message code="consulta.asistencia.label" default="Asistencia" /></span>
+					
+						<span class="property-value" aria-labelledby="asistencia-label"><g:formatBoolean boolean="${consultaInstance?.asistencia}" /></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:consultaInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
