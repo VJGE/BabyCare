@@ -14,7 +14,7 @@
 			<a href="datosResp" class="datos"> DATOS PERSONALES</a>
 			</li>
 			<li>
-			<a href="show" class="misPeq"> MIS PEQUEÑOS </a>
+			<g:link action="listaPacientes" id="${session.responsable.id}">MIS PEQUEÑOS</g:link>
 			</li>
 			<li>
 			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>

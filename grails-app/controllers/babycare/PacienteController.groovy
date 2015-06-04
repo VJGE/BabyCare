@@ -24,6 +24,10 @@ class PacienteController {
     def create() {
         respond new Paciente(params)
     }
+	
+	def datosPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
 
     @Transactional
     def save(Paciente pacienteInstance) {
