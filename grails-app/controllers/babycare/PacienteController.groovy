@@ -10,10 +10,12 @@ class PacienteController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
-	def mainPaciente(){};
-	def datosPaciente(){};
-	def desarrolloPaciente(){};
-	def prueba(){};
+	def mainPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
+	def desarrolloPaciente(){}
+	def prueba(){}
+	def datosPaciente(){}
 	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
@@ -27,10 +29,6 @@ class PacienteController {
     def create() {
         respond new Paciente(params)
     }
-	
-	def datosPaciente(Paciente pacienteInstance){
-		respond pacienteInstance
-	}
 
     @Transactional
     def save(Paciente pacienteInstance) {

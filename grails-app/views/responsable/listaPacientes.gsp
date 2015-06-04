@@ -25,7 +25,7 @@
 				<tbody>
 				<g:each in="${responsableInstance.paciente}" var="p">
 					
-						<td><g:link controller="paciente" action="datosPaciente" id="${p.id}">${p?.nombre} ${p?.apellido}</g:link></td>
+						<td><g:link controller="paciente" action="mainPaciente" id="${p.id}">${p?.nombre} ${p?.apellido}</g:link></td>
 					
 						<td>${p.documento}</td>
 					
