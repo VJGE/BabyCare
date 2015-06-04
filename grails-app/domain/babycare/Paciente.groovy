@@ -7,7 +7,7 @@ class Paciente{
 	String sexo
 	String tipoDocumento
 	String documento
-	int telefono
+	String telefono
 	String direccion
 	int edad
 	int edadMeses
@@ -36,6 +36,10 @@ class Paciente{
 	static hasMany = [padres:Padre, vacunas:Vacuna]
 	static belongsTo = [responsable:Responsable]
 	
+	static mapping={
+		foto length:2000000
+	}
+		
 	static constraints = {
 		nombre(blank : false, nullable : false)
 		apellido(blank : false, nullable : false)
@@ -65,5 +69,6 @@ class Paciente{
 		edadGestacional (blank:false, max: 45);
 		historiaClinica(nullable:true);
 		foto (nullable:true);
-	}
+	}	
 }
+

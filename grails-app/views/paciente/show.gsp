@@ -269,7 +269,7 @@
 				<g:if test="${pacienteInstance?.foto}">
 				<li class="fieldcontain">
 					<span id="foto-label" class="property-label"><g:message code="paciente.foto.label" default="Foto" /></span>
-					
+						<img id="imagenPerfil" src="${g.createLink(controller:'paciente',action:'mostrarImagen',params:[id:pacienteInstance.id])}">
 				</li>
 				</g:if>
 			

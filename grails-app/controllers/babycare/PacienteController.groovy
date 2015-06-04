@@ -15,6 +15,16 @@ class PacienteController {
 	def desarrolloPaciente(){};
 	def prueba(){};
 	
+	def mostrarImagen(){
+		
+		  def paciente= Paciente.get(params.id)
+		  println(paciente.nombre)
+		  
+		   response.outputStream.write(paciente.foto)
+		   response.outputStream.close()
+		  
+		 }
+	
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         respond Paciente.list(params), model:[pacienteInstanceCount: Paciente.count()]

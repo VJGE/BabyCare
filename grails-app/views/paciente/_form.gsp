@@ -295,7 +295,7 @@
 		<g:message code="paciente.telefono.label" default="Telefono" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:field name="telefono" type="number" value="${pacienteInstance.telefono}" required=""/>
+	<g:textField name="telefono" required="" value="${pacienteInstance?.telefono}"/>
 
 </div>
 
