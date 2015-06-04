@@ -125,3 +125,9 @@
 	margin-top:120px;
 	margin-bottom: 150px;
 }
+
+#imagenPerfil{
+	width:20%;
+	height:100%;
+	float: center;	
+}

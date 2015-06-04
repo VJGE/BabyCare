@@ -30,8 +30,13 @@
 		</div>
 		</form>
 		<div class="contentpac1">
-			<h1 class="text-center">DATOS DE PACIENTE</h1>
-			<asset:image src="bebes.jpg" />
+			<h1 class="text-center"><g:fieldValue bean="${pacienteInstance}" field="nombre"/>
+			<g:fieldValue bean="${pacienteInstance}" field="apellido"/></h1>
+			<h2 align = "center"><img id="imagenPerfil" src="${g.createLink(controller:'paciente',action:'mostrarImagen',params:[id:pacienteInstance.id])}"></h2>
+			<h3><g:fieldValue bean="${pacienteInstance}" field="edad"/> años 
+			<g:fieldValue bean="${pacienteInstance}" field="edadMeses"/> meses </h3>
+			<h4>Fecha de nacimiento: <g:formatDate date="${pacienteInstance?.fechaNacimiento}" /></h4>
+			
 		</div>
 		<div class="contentpac2">
 			<h1 class="text-center">TABLA DE DATOS</h1>
