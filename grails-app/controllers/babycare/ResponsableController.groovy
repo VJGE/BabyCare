@@ -11,10 +11,9 @@ class ResponsableController {
 	static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 	static scaffold = Responsable
 	
+	def LoginService
 	def login(){}
-	
 	def mainResp(){}
-	
 	def datosResp(){}
 	
 	/*def listaPacientes(Integer max){
@@ -32,24 +31,31 @@ class ResponsableController {
 	}
 	
 	def handleLogin(){
-		def responsable = Responsable.findByDocumento(params.documento)
-		def contra = params.contrasenia
-		if(!responsable){
-			flash.message='Usuario no encontrado'
-			redirect(action:'login')
-			return
-		}else{
-			 if(responsable.contrasenia!=contra){
-				 flash.message='Contraseña incorrecta'
-				 redirect(action:'login')
-				 return
-			 }else{
-				 session.responsable = responsable
-				 redirect(action:'mainResp')			 }
+		if (session.authStatus == 'Logged'){
+			flash.message = 'Hay una sesión activa!!'
+		}
+		else{
+			
+			if(!params.documento || !params.contrasenia){
+				redirect(action:'login')
+			}
+			else{
+				def responsable = LoginService.loginResponsable(session,params)
+				if(!responsable){
+					flash.message='Usuario no encontrado'
+					redirect(action:'login')
+					return
+				}
+				else{
+					session.responsable = responsable
+				   redirect(action:'mainResp')
+				}
+			}
 		}
 	}
 	
 	def logout(){
+		LoginService.logout(session)
 		if(session.responsable){
 			session.responsable=null
 			render(view:"/index")
@@ -80,9 +86,15 @@ class ResponsableController {
 			respond responsableInstance.errors, view:'create'
 			return
 		}
-
-		responsableInstance.save flush:true
-
+		
+		if(params.contrasenia ==~ "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])([a-zA-Z0-9]+)"){
+			responsableInstance.contrasenia= responsableInstance.contrasenia.encodeAsMD5()
+			println "${responsableInstance.contrasenia}"
+			responsableInstance.save flush: true
+		}else{
+			flash.message = message('Contraseña inválida')
+		}
+		
 		request.withFormat {
 			form multipartForm {
 				flash.message = message(code: 'default.created.message', args: [message(code: 'responsable.label', default: 'Responsable'), responsableInstance.id])
@@ -107,9 +119,9 @@ class ResponsableController {
 			respond responsableInstance.errors, view:'edit'
 			return
 		}
-
+		
 		responsableInstance.save flush:true
-
+		
 		request.withFormat {
 			form multipartForm {
 				flash.message = message(code: 'default.updated.message', args: [message(code: 'Responsable.label', default: 'Responsable'), responsableInstance.id])

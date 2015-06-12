@@ -11,34 +11,41 @@ class MedicoController {
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
 	static scaffold = Medico
+	
+	def LoginService
 	def login(){}
-	
 	def mainMedico(){}
-	
+
 	def inicio(){
 		render(view:"/index")
 	}
 	
 	def handleLogin(){
-		def medico = Medico.findByDocumento(params.documento)
-		def contra = params.contrasenia
-		if(!medico){
-			flash.message='Usuario no encontrado'
-			redirect(action:'login')
-			return
-		}else{
-			 if(medico.contrasenia!=contra){
-				 flash.message='Contraseña incorrecta'
-				 redirect(action:'login')
-				 return
-			 }else{
-			 	session.medico = medico
-				redirect(action:'mainMedico')
-			 }
-		} 
+		if (session.authStatus == 'Logged'){
+			flash.message = 'Hay una sesión activa!!'
+		}
+		else{
+			
+			if(!params.documento || !params.contrasenia){
+				redirect(action:'login')
+			}
+			else{
+				def medico = LoginService.loginMedico(session,params)
+				if(!medico){
+					flash.message='Usuario no encontrado'
+					redirect(action:'login')
+					return
+				}
+				else{
+					session.medico = medico
+				   redirect(action:'mainMedico')
+				}		
+			}
+		}		
 	}
 	
 	def logout(){
+		LoginService.logout(session)
 		if(session.medico){
 			session.medico=null
 			render(view:"/index")
@@ -70,7 +77,13 @@ class MedicoController {
             return
         }
 
-        medicoInstance.save flush:true
+		if(params.contrasenia ==~ "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])([a-zA-Z0-9]+)"){
+			medicoInstance.contrasenia= medicoInstance.contrasenia.encodeAsMD5()
+			println "${medicoInstance.contrasenia}"
+			medicoInstance.save flush: true
+		}else{
+			flash.message = message('Contraseña inválida')
+		}
 
         request.withFormat {
             form multipartForm {

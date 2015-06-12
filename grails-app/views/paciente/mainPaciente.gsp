@@ -46,21 +46,21 @@
 			<td>Peso</td>
 			<td>Talla</td>
 			<td>PC</td></tr>
-			<tr><td>1</td>
-			<td>1</td>
-			<td>1</td>
-			<td>1</td>
-			<td>1</td></tr>
-			<tr><td>2</td>
-			<td>2</td>
-			<td>2</td>
-			<td>2</td>
-			<td>2</td></tr>
-			<tr><td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td>
-			<td>3</td></tr>
+			<tr><td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td></tr>
+			<tr><td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td></tr>
+			<tr><td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td></tr>
 			</table>
 		</div>
 	</body>
