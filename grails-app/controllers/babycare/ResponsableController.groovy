@@ -14,7 +14,9 @@ class ResponsableController {
 	def LoginService
 	def login(){}
 	def mainResp(){}
-	def datosResp(){}
+	def datosResp(Responsable responsableInstance){
+		respond responsableInstance
+	}
 	
 	/*def listaPacientes(Integer max){
 		params.max = Math.min(max ?: 10, 100)

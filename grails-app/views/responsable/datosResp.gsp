@@ -12,16 +12,16 @@
 		<br>
 		<br>
 		<label class="indic">Nombre: </label>
-		<label class="rec">${session.responsable?.nombre}</label>
+		<label class="rec">${responsableInstance.nombre}</label>
 		<label class="indic">Apellidos: </label>
-		<label class="rec">${session.responsable?.apellido}</label>
+		<label class="rec">${responsableInstance.apellido}</label>
 		<br>
 		<br>
 		<br>
-		<label class="indic">${session.responsable?.tipoDocumento}:</label>
-		<label class="rec">${session.responsable?.documento}</label>
+		<label class="indic">${responsableInstance.tipoDocumento}:</label>
+		<label class="rec">${responsableInstance.documento}</label>
 		<label class="indic">Edad:</label>
-		<label class="rec">${session.responsable?.edad}</label>
+		<label class="rec">${responsableInstance.edad}</label>
 		<br>
 		<hr width="90%" style="border:1px solid black;">
 		</section>
@@ -31,9 +31,9 @@
 		<br>
 		<br>
 		<label class="indic">Dirección: </label>
-		<label class="rec">${session.responsable?.direccion} ${session.responsable?.ciudad}</label>
+		<label class="rec">${responsableInstance.direccion} ${session.responsable?.ciudad}</label>
 		<label class="indic">Telefono: </label>
-		<label class="rec">${session.responsable?.telefono}</label>
+		<label class="rec">${responsableInstance.telefono}</label>
 		<br>
 		<hr width="90%" style="border:1px solid black;">
 		<label class="tittle">FAMILIAR Y OCUPACIONAL</label>
@@ -41,16 +41,16 @@
 		<br>
 		<br>
 		<label class="indic">Estado Civil: </label>
-		<label class="rec">${session.responsable?.estadoCivil}</label>
+		<label class="rec">${responsableInstance.estadoCivil}</label>
 		<label class="indic">Parentesco responsabilidad: </label>
-		<label class="rec">${session.responsable?.parentesco}</label>
+		<label class="rec">${responsableInstance.parentesco}</label>
 		<br>
 		<br>
 		<br>
 		<label class="indic">Ocupación: </label>
-		<label class="rec">${session.responsable?.ocupacion}</label>
+		<label class="rec">${responsableInstance.ocupacion}</label>
 		<label class="indic">Nivel Salarial: </label>
-		<label class="rec">${session.responsable?.nivelSalarial}</label>
+		<label class="rec">${responsableInstance.nivelSalarial}</label>
 		<br>
 		<hr width="90%" style="border:1px solid black;">
 		<label class="tittle">EPS</label>
@@ -58,21 +58,21 @@
 		<br>
 		<br>
 		<label class="indic">EPS: </label>
-		<label class="rec">${session.responsable?.eps}</label>
+		<label class="rec">${responsableInstance.eps}</label>
 		<label class="indic">Tipo Afiliación: </label>
-		<label class="rec">${session.responsable?.tipoAfiliado}</label>
+		<label class="rec">${responsableInstance.tipoAfiliado}</label>
 		<br>
 		<br>
 		<br>
 		<label class="indic">Tipo Plan EPS: </label>
-		<label class="rec">${session.responsable?.tipoPlan}</label>
+		<label class="rec">${responsableInstance.tipoPlan}</label>
 		<label class="indic">IPS primaria: </label>
-		<label class="rec">${session.responsable?.ipsPrimaria}</label>
+		<label class="rec">${responsableInstance.ipsPrimaria}</label>
 		<label>${flash.message }</label>
 		<br>
 		</section>
-		<div class="botones2">
-			<a href="mainResp" class="regresar"> REGRESAR</a>
-		</div>
+		<g:form action="datosResp">
+			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
+		</g:form>
 	</body>
 </html>

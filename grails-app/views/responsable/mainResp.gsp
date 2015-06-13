@@ -11,13 +11,16 @@
 		<div class="buttons">
 			<ul>
 			<li>
-			<a href="datosResp" class="datos"> DATOS PERSONALES</a>
+			<g:link action="datosResp" id="${session.responsable.id}" class="datos">DATOS PERSONALES</g:link>
 			</li>
 			<li>
-			<g:link action="listaPacientes" id="${session.responsable.id}">MIS PEQUEÑOS</g:link>
+			<g:link action="listaPacientes" id="${session.responsable.id}" class="misPeq">MIS PEQUEÑOS</g:link>
 			</li>
 			<li>
 			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>
+			</li>
+			<li>
+			<g:link class="edit" action="edit" id="${session.responsable.id}" resource="${responsableInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
 			</li>
 			</ul>
 		</div>
