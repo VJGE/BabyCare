@@ -35,7 +35,7 @@
 			<h2 align = "center"><img id="imagenPerfil" src="${g.createLink(controller:'paciente',action:'mostrarImagen',params:[id:pacienteInstance.id])}"></h2>
 			<h3><g:fieldValue bean="${pacienteInstance}" field="edad"/> años 
 			<g:fieldValue bean="${pacienteInstance}" field="edadMeses"/> meses </h3>
-			<h4>Fecha de nacimiento: <g:formatDate date="${pacienteInstance?.fechaNacimiento}" /></h4>
+			<h4>Fecha de nacimiento: <g:formatDate format = "dd-MM-yyyy" date="${pacienteInstance?.fechaNacimiento}" /></h4>
 			
 		</div>
 		<div class="contentpac2">
