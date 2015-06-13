@@ -17,10 +17,7 @@
 			<g:link action="listaPacientes" id="${session.responsable.id}" class="misPeq">MIS PEQUEÑOS</g:link>
 			</li>
 			<li>
-			<a href="mainResp" class="modDatos">MODIFICAR DATOS</a>
-			</li>
-			<li>
-			<g:link class="edit" action="edit" id="${session.responsable.id}" resource="${responsableInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+			<g:link class="modDatos" action="editarDatosResp" id="${session.responsable.id}" resource="${responsableInstance}">MODIFICAR DATOS</g:link>
 			</li>
 			</ul>
 		</div>
