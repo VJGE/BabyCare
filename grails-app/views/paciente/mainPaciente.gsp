@@ -18,7 +18,8 @@
 				<a href="" class="vacunas">Vacunas</a>
 			</li>
 			<li>
-				<a href="" class="citas">Citas</a>
+				<g:link action="citaPaciente" id="${pacienteInstance.id}" class="citas">Citas</g:link>
+				<!--<a href="/BabyCare/paciente/citaPaciente" class="citas">Citas</a>-->
 			</li>
 			<li>
 				<a href="" class="medicamentos">Medicamentos</a>

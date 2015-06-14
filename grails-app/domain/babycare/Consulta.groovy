@@ -4,6 +4,8 @@ class Consulta {
 	
 	String documentoPaciente
 	String documentoMedico
+	String lugar
+	String tipoDeConsulta
 	Date date
 	boolean finalizada
 	boolean asistencia 
