@@ -5,9 +5,6 @@
 		<asset:stylesheet src="mainPaciente.css"/>
 		<asset:stylesheet src="mainMedico.css"/>
 		<style type="text/css">
-  			.regular{
-  				width: auto;
-  			}
   			.consultaIndividual{
   				padding: 1%;
   				border-color: #fff;
