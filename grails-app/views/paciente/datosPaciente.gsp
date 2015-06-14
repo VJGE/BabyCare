@@ -6,7 +6,6 @@
 	</head>
 	<body>
 		<div class="datos">
-			
 		</div>	
 	</body>
 </html>

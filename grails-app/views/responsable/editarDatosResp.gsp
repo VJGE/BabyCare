@@ -25,14 +25,14 @@
 					<g:render template="form2"/>
 				</fieldset>
 				
-				<fieldset class="buttons">
-					<g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />
+				<fieldset>
+					<g:actionSubmit class="buttonupdate" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" />
 				</fieldset>
 			</g:form>
 		</div>
 
-		<g:form action="datosResp">
-			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
+		<g:form action="editarDatosResp">
+			<g:actionSubmit value="Regresar" action="mainResp" class="buttonVolv" />
 		</g:form>
 	</body>
 </html>
