@@ -37,12 +37,35 @@
 
 .contentpac1 {
 				margin: -250px 20px 20px 350px;
-				width: 400px;
-				background-color: #ffffff;
+				width: 450px;
+				height:250px;
+				background-image:url(../images/FONDOS/OPC33.png);
 				float: left;
-				border: 1px outset gray;
+				border: 1px outset #0ac1e2;
+				border-radius:5%;
+				background-repeat:no-repeat;
 			}
-			
+
+#imagenPerfil{
+	width:30%;
+	height:50%;
+	float: left;	
+	border-radius: 45%;
+	margin-left:10px;
+}
+
+.text-center {
+				text-align: center;
+				font-face:"arial";
+				font-style: italic;
+				font-weight: bold;
+				margin-top:60px;
+			}
+.text-center-h4{
+				margin-left:165px;
+				text-align: left;
+				font-face:"arial";
+}						
 
 .contentpac2 {
 				margin: -250px 20px 20px 850px;
@@ -52,9 +75,7 @@
 				border: 1px outset gray;
 			}
 			
-.text-center {
-				text-align: center;
-			}
+
 
 /* REGULAR */
 .buttons li{
@@ -126,8 +147,4 @@
 	margin-bottom: 150px;
 }
 
-#imagenPerfil{
-	width:20%;
-	height:100%;
-	float: center;	
-}
+

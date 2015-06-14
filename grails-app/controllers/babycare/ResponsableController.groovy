@@ -18,6 +18,10 @@ class ResponsableController {
 		respond responsableInstance
 	}
 	
+	def editarDatosResp(Responsable responsableInstance){
+		respond responsableInstance
+	}
+	
 	/*def listaPacientes(Integer max){
 		params.max = Math.min(max ?: 10, 100)
 		respond Responsable.list(params), model:[responsableInstanceCount: Responsable.count()]
@@ -127,7 +131,7 @@ class ResponsableController {
 		request.withFormat {
 			form multipartForm {
 				flash.message = message(code: 'default.updated.message', args: [message(code: 'Responsable.label', default: 'Responsable'), responsableInstance.id])
-				redirect responsableInstance
+				redirect(action:'mainResp')
 			}
 			'*'{ respond responsableInstance, [status: OK] }
 		}
