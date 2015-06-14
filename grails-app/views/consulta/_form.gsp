@@ -47,3 +47,21 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: consultaInstance, field: 'lugar', 'error')} required">
+	<label for="lugar">
+		<g:message code="consulta.lugar.label" default="Lugar" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="lugar" required="" value="${consultaInstance?.lugar}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: consultaInstance, field: 'tipoDeConsulta', 'error')} required">
+	<label for="tipoDeConsulta">
+		<g:message code="consulta.tipoDeConsulta.label" default="Tipo De Consulta" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="tipoDeConsulta" required="" value="${consultaInstance?.tipoDeConsulta}"/>
+
+</div>
+

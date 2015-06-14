@@ -15,13 +15,19 @@ class PacienteController {
 	}
 	def desarrolloPaciente(){}
 	def prueba(){}
-	def datosPaciente(){}
+	def datosPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
 	
 	def mostrarFecha(){
 		def paciente = Paciente.get(params.id)
 		def fecha = paciente.fechaNacimiento
 		def fechaNac = fecha.format('dd - MM - yyyy')
 		return fechaNac
+	}
+	
+	def citaPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
 	}
 	
 	def mostrarImagen(){

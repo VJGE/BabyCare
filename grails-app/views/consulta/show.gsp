@@ -68,6 +68,24 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${consultaInstance?.lugar}">
+				<li class="fieldcontain">
+					<span id="lugar-label" class="property-label"><g:message code="consulta.lugar.label" default="Lugar" /></span>
+					
+						<span class="property-value" aria-labelledby="lugar-label"><g:fieldValue bean="${consultaInstance}" field="lugar"/></span>
+					
+				</li>
+				</g:if>
+			
+				<g:if test="${consultaInstance?.tipoDeConsulta}">
+				<li class="fieldcontain">
+					<span id="tipoDeConsulta-label" class="property-label"><g:message code="consulta.tipoDeConsulta.label" default="Tipo De Consulta" /></span>
+					
+						<span class="property-value" aria-labelledby="tipoDeConsulta-label"><g:fieldValue bean="${consultaInstance}" field="tipoDeConsulta"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:consultaInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
