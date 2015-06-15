@@ -60,7 +60,7 @@
         <div class="item">
           <div class="contentpac1">
 						<h5 class="text-left-h4" style="margin-top:50px;">Sexo: <g:fieldValue bean="${pacienteInstance}" field="sexo"/></h5>
-						<h5 class="text-left-h4"><g:fieldValue bean="${pacienteInstance}" field="grupoSanguineo"/><g:fieldValue bean="${pacienteInstance}" field="rh"/></h5>
+						<h5 class="text-left-h4">Grupo sanguíneo: <g:fieldValue bean="${pacienteInstance}" field="grupoSanguineo"/> RH: <g:fieldValue bean="${pacienteInstance}" field="rh"/></h5>
 						<h5 class="text-left-h4">Fecha de nacimiento: <g:formatDate format = "dd-MM-yyyy" date="${pacienteInstance?.fechaNacimiento}" /></h5>
 						<h5 class="text-left-h4">Peso de naciemiento: <g:fieldValue bean="${pacienteInstance}" field="pesoNacimiento"/></h5>
 						<h5 class="text-left-h4">Talla de nacimiento: <g:fieldValue bean="${pacienteInstance}" field="tallaNacimiento"/></h5>
