@@ -72,7 +72,7 @@
 		<br>
 		</section>
 		<g:form action="datosResp">
-			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
+			<g:actionSubmit value="Regresar" action="mainResp" class="buttonVolv" />
 		</g:form>
 	</body>
 </html>

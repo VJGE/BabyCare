@@ -39,8 +39,8 @@
 			</table>
 
 		</section>
-		<g:form action="datosResp">
-			<g:actionSubmit value="Regresar" action="mainResp" class="btn-navDR" />
+		<g:form action="listaPacientes">
+			<g:actionSubmit value="Regresar" action="mainResp" class="buttonVolv" />
 		</g:form>
 	</body>
 </html>

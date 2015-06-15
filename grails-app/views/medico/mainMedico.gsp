@@ -34,7 +34,7 @@
 			<h1 class="titulo_seccion"> Proximas Consultas </h1>	
 			<div class="buttons" id="consul">
                 <g:each var="p" in="${babycare.Consulta.findByDocumentoMedicoAndFinalizada(session.medico?.documento , false,[max: 10, sort: "date", order: "desc"])}">
-					<a class="regular">p.documentoPaciente</a><br>
+					<a class="regular">${p.documentoPaciente}</a><br>
                 </g:each>
 			</div>
 		</div>

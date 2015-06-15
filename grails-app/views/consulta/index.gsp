@@ -34,6 +34,8 @@
 					
 						<g:sortableColumn property="asistencia" title="${message(code: 'consulta.asistencia.label', default: 'Asistencia')}" />
 					
+						<g:sortableColumn property="lugar" title="${message(code: 'consulta.lugar.label', default: 'Lugar')}" />
+					
 					</tr>
 				</thead>
 				<tbody>
@@ -49,6 +51,8 @@
 						<td><g:formatBoolean boolean="${consultaInstance.finalizada}" /></td>
 					
 						<td><g:formatBoolean boolean="${consultaInstance.asistencia}" /></td>
+					
+						<td>${fieldValue(bean: consultaInstance, field: "lugar")}</td>
 					
 					</tr>
 				</g:each>

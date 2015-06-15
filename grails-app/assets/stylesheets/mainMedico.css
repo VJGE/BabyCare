@@ -1,10 +1,10 @@
 
 #busqueda{
-	margin-left:-10%;
-	margin-top: 10%;
+	margin-left:-14%;
+	margin-top: 9%;
 	float: left;
 	position: relative;
-	background-color: #5CA8D3;
+	/*background-color: #5CA8D3;*/
 	max-width: 30%;
 	padding: 2%;
 	margin-bottom: 5%;
@@ -19,7 +19,7 @@
 }
 
 #usuario{
-	margin-top: 10%;
+	margin-top: 9%;
 	float: right;
 	margin-right: 2%;
 	position: relative;
@@ -33,10 +33,13 @@
 	text-align: center;
 }
 
+#consul{
+	width: 120%;
+}
+
 .buttons {
 	margin-bottom: 5%;
 	margin-top: 2%;
 	margin-left: 0;
 	max-width: 100%;
 }
-
