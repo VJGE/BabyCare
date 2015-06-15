@@ -4,12 +4,13 @@
 		<title>Baby Care</title>
 		<meta name="layout" content="main" />
 		<asset:stylesheet src="mainResponsable.css"/>
+		<asset:javascript src="mainResponsable.js"/>
 	</head>
 	<body>
 	<g:form action="mainResp">
 		<section class="section-content">
 		<div class="buttons">
-			<ul>
+			<ul class="ms">
 			<li>
 			<g:link action="datosResp" id="${session.responsable.id}" class="datos">DATOS PERSONALES</g:link>
 			</li>
@@ -19,17 +20,25 @@
 			<li>
 			<g:link class="modDatos" action="editarDatosResp" id="${session.responsable.id}" resource="${responsableInstance}">MODIFICAR DATOS</g:link>
 			</li>
+			<li>
+			<div class="recomendaciones">RECOMENDACIONES</div>
+				<ul>
+				<li>
+				<div id="btn_1" class="one" onClick="showRecom(this.id,'squareRecom')">Alimentos</div>
+				</li>
+				<li>
+				<div id="btn_2" class="two" onClick="showRecom(this.id,'squareRecom')">Entretenimiento</div>
+				</li>
+				</ul>
+			</li>
 			</ul>
 		</div>
 		<div class="tittlecontent">
 			<h1 class="text-center">RECOMENDACIONES</h1>
+		</div>			
+		<div id="squareRecom" class="divRecom">
+			
 		</div>
-			<div class="contentresp1">
-				<asset:image src="consejo2.jpg" />
-			</div>
-			<div class="contentresp2">
-				<asset:image src="bebecomiendo.jpg" />
-			</div>
 		</section>	
 		<section class="section-content2">
 
