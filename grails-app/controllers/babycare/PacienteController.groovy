@@ -15,8 +15,7 @@ class PacienteController {
 	}
 	def desarrolloPaciente(){}
 	def prueba(){}
-	def datosPaciente(Paciente pacienteInstance){
-		respond pacienteInstance
+	def datosPaciente(){
 	}
 	
 	def mostrarFecha(){

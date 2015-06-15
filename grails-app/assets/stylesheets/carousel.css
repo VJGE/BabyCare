@@ -39,13 +39,15 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 550px;
+  height: auto;
   background-color: #75a6f0;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 100px;
   margin-bottom: 8%;
+  padding-bottom: 25px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
