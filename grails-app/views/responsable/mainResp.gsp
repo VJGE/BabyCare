@@ -48,7 +48,6 @@
 					</ul>
 			</li>
 			</ul>
-			
 		</div>
 		
 		<div class="tittlecontent">
@@ -103,19 +102,9 @@
 				</div>
           	</div>
 		</div>
-		</section>	
 		
-		</section>	
-		<section class="section-content2">
-			<div class="botones2">
-			<a href="mainResp" class="chat"> CHAT</a>
-			<a href="mainResp" class="notificaciones"> NOTIFICACIONES </a>
-		</div>
-		</section>
-	</g:form>
-	<div class="clear"></div>
-	
-	<div class="calendario">
+		
+			<div class="calendario">
 	<script>
 	
 		$(document).ready(function() {
@@ -190,5 +179,21 @@
 	<div id='calendar'></div>	
 
 	</div>
+		
+		
+		
+		
+		
+		</section>	
+		
+		</section>	
+		<section class="section-content2">
+			<div class="botones2">
+			<a href="mainResp" class="chat"> CHAT</a>
+			<a href="mainResp" class="notificaciones"> NOTIFICACIONES </a>
+		</div>
+		</section>
+	</g:form>
+	<div class="clear"></div>
 </body>
 </html>
