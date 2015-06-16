@@ -59,7 +59,8 @@
 		<div class="buttons" >
 		<ul>
 			<li>
-				<a href="" class="datos"> Datos personales</a>
+				<g:link action="mainPaciente" id="${pacienteInstance.id}" class="datos">Datos personales</g:link>
+				<!-- <a href="" class="datos"> Datos personales</a>  -->
 			</li>
 			<li>
 				<g:link action="historiaPaciente" id="${pacienteInstance.id}" class="historia">Historia Clinica</g:link>

@@ -1,0 +1,30 @@
+#campos{
+  padding: 2%;
+  border-radius: 1%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: solid;
+  border-color: #7E7E7E;
+  border-width: 1px;
+  background-color: #FAFAFA;
+}
+
+#principal{
+  border: solid;
+  border-color: #7E7E7E;
+  padding: 1%;
+    width:35%; 
+    background-color: #FAFAFA;
+    border-radius: 2%;
+  padding-bottom: 3%;
+  float:left;
+  margin-left: 5%;
+}
+#Consultas{
+  margin-left: -4%;
+  margin-top: 10%;
+  float: left;
+  width: 70%%;
+  padding: 1%;
+  margin-bottom: 5%;
+}

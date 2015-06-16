@@ -4,21 +4,16 @@
 		<meta name="layout" content="main" />
 		<asset:stylesheet src="mainPaciente.css"/>
 		<asset:stylesheet src="mainMedico.css"/>
-		<style type="text/css">
-  			.consultaIndividual{
-  				padding: 1%;
-  				border-color: #fff;
-  				border-radius: 1%;
-  				margin-top: 1%;
-  			}
-		</style>
+		<asset:stylesheet src="miniConsulta.css"/>
+		
 	</head>
 	<body>
 	<div id="busqueda">
 		<div class="buttons" >
 		<ul>
 			<li>
-				<a href="" class="datos"> Datos personales</a>
+				<g:link action="mainPaciente" id="${pacienteInstance.id}" class="datos">Datos personales</g:link>
+				<!-- <a href="" class="datos"> Datos personales</a>  -->
 			</li>
 			<li>
 				<g:link action="historiaPaciente" id="${pacienteInstance.id}" class="historia">Historia Clinica</g:link>
@@ -41,13 +36,21 @@
 		</div>
 		</div>
 		
-		<div id="Consultas_hoy"> <!-- se usa la misma id de la lista de consultas para medico pues usa el mismo estilo
+		<div id="Consultas"> <!-- se usa la misma id de la lista de consultas para medico pues usa el mismo estilo
 									pero este listado de consultas muestra las proximas 10 sin importar que fecha son -->
 			<g:each in="${pacienteInstance.historiaClinica.registrosConsultas}" var="p">
-					<div class="consultaIndividual">
-						<h5>${p.fecha}      <h4> Lugar </h4>  ${p.lugarConsulta}</h5>
-						<p>${p.tipoConsulta}</p><br>
+					<div id="principal">
+						<h4>${p.fecha}  <br><br> Lugar: </h4>
+						<div id="campos">
+						 ${p.lugarConsulta}
+						 </div>
+						<h4> Tipo de cita</h4>
+						<div id="campos">
+						${p.tipoConsulta}
+						</div>
+						<br>
 						<g:link controller="registroConsulta" action="verConsulta" id="${p.id}">Ver Consulta Completa</g:link>
+						
 					</div>
 			</g:each>
 				
