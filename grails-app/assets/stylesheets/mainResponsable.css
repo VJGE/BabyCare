@@ -144,7 +144,7 @@ section {
 /*Botones generales*/
 	
 	
-.buttons a, .one,.two,.recomendaciones{
+.buttons a, .one,.two,.three,.recomendaciones{
     display:block;
     float:left;
     margin:0 7px 0 0;
@@ -176,7 +176,7 @@ section {
 .buttons li{
 	list-style-type:none;
 }
-.buttons a,.one,.two,.recomendaciones{
+.buttons a,.one,.two,.three,.recomendaciones{
 	width:245px;
 	height:40px;
 	color:#000000;
@@ -210,19 +210,23 @@ section {
 	background-image:url(../images/two.png);
 }
 
-.buttons a.datos, a.misPeq, a.modDatos, button.recomendaciones,.one,.two,.recomendaciones{
+.three{
+	background-image:url(../images/three.png);
+}
+
+.buttons a.datos, a.misPeq, a.modDatos, button.recomendaciones,.one,.two,.three,.recomendaciones{
 	background-position:0.7em center;
 	background-repeat:no-repeat;
 	text-indent: 30px;
 	text-decoration:none;
 }
 
-.buttons a.datos:hover, a.misPeq:hover, a.modDatos:hover, button.recomendaciones:hover,.one:hover,.two:hover,.recomendaciones:hover{
+.buttons a.datos:hover, a.misPeq:hover, a.modDatos:hover, button.recomendaciones:hover,.one:hover,.two:hover,.three:hover,.recomendaciones:hover{
     background-color:#cecece;
     border:1px solid #ffffff;
     color:#000000;
 }
-.buttons a.datos:active, a.misPeq:active, a.modDatos:active,button.one:active,.one:active,.two:active,.recomendaciones:active{
+.buttons a.datos:active, a.misPeq:active, a.modDatos:active,button.one:active,.one:active,.two:active,.three:active,.recomendaciones:active{
     background-color:#6299c5;
     border:1px solid #6299c5;
     color:#fff;
@@ -342,8 +346,14 @@ section {
   	height: 400px;
   	border: 5px;
  	float: right;
- 	margin-right: -50px;
+ 	margin-right: 70px;
  	margin-top: 50px;
  	margin-bottom:300px;
  	display: block;
+ 	background
 }
+.hideRecom{
+	display:none;
+}
+
+
