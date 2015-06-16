@@ -29,6 +29,15 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'lugarConsulta', 'error')} required">
+	<label for="lugarConsulta">
+		<g:message code="registroConsulta.lugarConsulta.label" default="Lugar Consulta" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:textField name="lugarConsulta" required="" value="${registroConsultaInstance?.lugarConsulta}"/>
+
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: registroConsultaInstance, field: 'historiaClinica', 'error')} required">
 	<label for="historiaClinica">
 		<g:message code="registroConsulta.historiaClinica.label" default="Historia Clinica" />
