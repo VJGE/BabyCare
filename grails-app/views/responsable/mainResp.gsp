@@ -45,7 +45,7 @@
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>			
 		<div id="squareText" class="divTextRecom">
-			<p>HOLAAAAAAAAAAAAAAAAAAAa</p>
+			
 		</div>
 		<div id="recomCognitivo" class="hideRecom">
 			<asset:image src='cognitivo.jpg' alt='cargando' style='height:100%; width:auto;' />
@@ -69,24 +69,24 @@
                      		<div>
                         		<asset:image src="cognitivo.jpg" alt="" class="img-border" />
                         		<p class="top-1"><div id="btn_1_2" onClick="showRecom(this.id,'recomCognitivo')"><strong>Cognitivo</strong></div></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
+                    			<p>12 a 18 meses de edad</p>
                        		</div>
                         	<div>
                         		<asset:image src="social.jpg" alt="" class="img-border" />
                         		<p class="top-1"><div id="btn_2_2" onClick="showRecom(this.id,'recomSocial')"><strong>Social</strong></div></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
+                    			<p>Bebés de 7 meses y Niños de 1 a 3 años</p>
                         	</div>
                      	</div>
                      	<div class="block-8 wrap top-3">
                      		<div>
                         		<asset:image src="motricidad.jpg" alt="" class="img-border" />
                         		<p class="top-1"><div id="btn_3_2" onClick="showRecom(this.id,'recomMotriz')"><strong>Motriz</strong></div></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
+                    			<p>Niños de 1-3 años</p>
                         	</div>
                         	<div>
                         		<asset:image src="comunicativo.jpg" alt="" class="img-border" />
                         		<p class="top-1"><div id="btn_4_2" onClick="showRecom(this.id,'recomCom')"><strong>Comunicativo</strong></div></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
+                    			<p>Inicio del habla</p>
                         	</div>
                      	</div>
                 	</div>
