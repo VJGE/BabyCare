@@ -48,6 +48,43 @@
 		<div id="recomMotriz" class="hideRecom">
 			<asset:image src='motricidad.jpg' alt='cargando' style='height:100%; width:auto;' />
 		</div>
+		
+		
+		
+		<div id="squareRecom" class="divRecom">
+			<div class="container_12">
+          		<div class="grid_12">
+                	<div class="pad-3">
+                     	<div class="block-8 wrap">
+                     		<div>
+                        		<asset:image src="/FONDOS/page4-img1.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                       		</div>
+                        	<div>
+                        		<asset:image src="/FONDOS/page4-img2.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        	</div>
+                     	</div>
+                     	<div class="block-8 wrap top-3">
+                     		<div>
+                        		<asset:image src="/FONDOS/page4-img4.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        	</div>
+                        	<div>
+                        		<asset:image src="/FONDOS/page4-img5.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        	</div>
+                     	</div>
+                	</div>
+				</div>
+          	</div>
+		</div>
+		</section>	
+		
 		</section>	
 		<section class="section-content2">
 			<div class="botones2">
