@@ -14,7 +14,6 @@
         <div class="container_12">
           <div class="grid_12">
                 <div class="pad-3">
-                    <h3 class="p5">Our Projects</h3>
                      <div class="block-8 wrap">
                      	<div>
                         	<asset:image src="/FONDOS/page4-img1.jpg" alt="" class="img-border" />

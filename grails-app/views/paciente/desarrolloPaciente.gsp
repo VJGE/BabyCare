@@ -2,6 +2,7 @@
   <head>
  	<title>Baby Care/Paciente</title>
 	<meta name="layout" content="main" />
+	<asset:stylesheet src="mainPaciente.css"/>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load('visualization', '1', {'packages': ['table', 'map', 'corechart']});
@@ -84,17 +85,42 @@
   </head>
 
   <body>
-  	<label style="margin-top:50px;margin-left:400px">Gráficas de desarrollo</label>
-    <table align="center">
+
+		<div class="buttons" >
+		<ul>
+			<li>
+				<a href="" class="datos"> Datos personales</a>
+			</li>
+			<li>
+				<a href="" class="historia"> Historia clinica</a>
+			</li>
+			<li>
+				<a href="" class="vacunas">Vacunas</a>
+			</li>
+			<li>
+				<g:link action="citaPaciente" id="${pacienteInstance.id}" class="citas">Citas</g:link>
+				<!--<a href="/BabyCare/paciente/citaPaciente" class="citas">Citas</a>-->
+			</li>
+			<li>
+				<a href="" class="medicamentos">Medicamentos</a>
+			</li>
+			<li>
+				<a href="/BabyCare/paciente/desarrolloPaciente" class="desarrollo">Desarrollo</a>
+			</li>
+		</ul>
+		</div>
+	<div class="tablaGr">
+  	<label style="margin-left:450px;">Gráficas de desarrollo</label>
+    <table>
       <tr>
         <td style="width:50%;">
-          <div id="chart_div" style="align: center; width: 400px; height: 300px;"></div>
+          <div id="chart_div" style="align: center; width: 500px; height: 300px;"></div>
         </td>
         <td style="width:50%;">
-          <div id="prueba_div" style="align: center; width: 400px; height: 300px;"></div>
+          <div id="prueba_div" style="align: center; width: 500px; height: 300px;"></div>
         </td>
       </tr>
     </table>
-
+	</div>
   </body>
 </html>

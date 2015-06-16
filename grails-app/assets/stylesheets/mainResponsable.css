@@ -14,7 +14,7 @@
 	border:3px outset gray;
 	}
 .tittlecontent{
-	margin-top:-150px;
+	margin-top:-250px;
 	border: 0px;
 	background-color: transparent;
 }
@@ -344,5 +344,6 @@ section {
  	float: right;
  	margin-right: -50px;
  	margin-top: 50px;
+ 	margin-bottom:300px;
  	display: block;
 }
