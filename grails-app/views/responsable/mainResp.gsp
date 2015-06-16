@@ -44,7 +44,7 @@
 		<div class="tittlecontent">
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>			
-		<div class="divTextRecom">
+		<div id="squareText" class="divTextRecom">
 			<p>HOLAAAAAAAAAAAAAAAAAAAa</p>
 		</div>
 		<div id="recomCognitivo" class="hideRecom">
