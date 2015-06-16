@@ -19,6 +19,12 @@ class RegistroConsultaController {
         respond registroConsultaInstance
     }
 
+	def verConsulta(RegistroConsulta registroConsultaInstance){
+		respond registroConsultaInstance
+		
+	}
+
+	
     def create() {
         respond new RegistroConsulta(params)
     }

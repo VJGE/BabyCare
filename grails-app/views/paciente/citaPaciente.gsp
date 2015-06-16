@@ -62,7 +62,8 @@
 				<a href="" class="datos"> Datos personales</a>
 			</li>
 			<li>
-				<a href="" class="historia"> Historia clinica</a>
+				<g:link action="historiaPaciente" id="${pacienteInstance.id}" class="historia">Historia Clinica</g:link>
+				<!-- <a href="" class="historia"> Historia clinica</a> -->
 			</li>
 			<li>
 				<a href="" class="vacunas">Vacunas</a>
