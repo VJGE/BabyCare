@@ -1,0 +1,21 @@
+#campos{
+	padding: 1%;
+	border-radius: 1%;
+	margin-top: 2%;
+	border: solid;
+	border-color: #7E7E7E;
+	border-width: 1px;
+	background-color: #FAFAFA;
+}
+
+#principal{
+	border: solid;
+	border-color: #7E7E7E;
+	padding: 1%;
+    width:60%; 
+    background-color: #FAFAFA;
+    border-radius: 2%;
+    margin-top: 3%;
+    margin-left: 20%;
+	padding-bottom: 3%;
+}

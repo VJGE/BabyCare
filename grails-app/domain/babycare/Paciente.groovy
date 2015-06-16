@@ -31,8 +31,8 @@ class Paciente{
 	double pcNacimiento
 	int edadGestacional
 	byte[] foto
-	HistoriaClinica historiaClinica
-	static hasOne=[HistoriaClinica]
+	
+	static hasOne=[historiaClinica: HistoriaClinica]
 	static hasMany = [padres:Padre, vacunas:Vacuna]
 	static belongsTo = [responsable:Responsable]
 	

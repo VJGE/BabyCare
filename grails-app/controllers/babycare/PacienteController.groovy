@@ -26,6 +26,11 @@ class PacienteController {
 		return fechaNac
 	}
 	
+	def historiaPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
+
+	
 	def citaPaciente(Paciente pacienteInstance){
 		respond pacienteInstance
 	}
