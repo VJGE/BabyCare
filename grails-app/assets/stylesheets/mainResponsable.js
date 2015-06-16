@@ -7,6 +7,7 @@ function showRecom(btn,square){
 	document.getElementById("recomSocial").className = "hideRecom";
 	document.getElementById("recomCognitivo").className = "hideRecom";
 	document.getElementById("recomMotriz").className = "hideRecom";
+	document.getElementById("squareRecom").className = "hideRecom";
 	
 	document.getElementById(square).className = "divRecom";
   }
