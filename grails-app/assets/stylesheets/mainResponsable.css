@@ -367,3 +367,13 @@ section {
 	margin-right:-150px;
 }
 
+.calendario{
+	margin-left:30px;
+	width:300px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	font-size: 14px;
+}
+#calendar {
+			max-width: 300px;
+		}
+

@@ -215,9 +215,8 @@
 				<g:if test="${pacienteInstance?.fechaNacimiento}">
 				<li class="fieldcontain">
 					<span id="fechaNacimiento-label" class="property-label"><g:message code="paciente.fechaNacimiento.label" default="Fecha Nacimiento" /></span>
-					
-						<span class="property-value" aria-labelledby="fechaNacimiento-label"><g:formatDate date="${pacienteInstance?.fechaNacimiento}" /></span>
-					
+						<span class="property-value" aria-labelledby="fechaNacimiento-label"><g:formatDate format="dd-MM-yyyy" date="${pacienteInstance?.fechaNacimiento}" /></span> 
+						
 				</li>
 				</g:if>
 			
@@ -269,7 +268,7 @@
 				<g:if test="${pacienteInstance?.foto}">
 				<li class="fieldcontain">
 					<span id="foto-label" class="property-label"><g:message code="paciente.foto.label" default="Foto" /></span>
-					
+						<img id="imagenPerfil" src="${g.createLink(controller:'paciente',action:'mostrarImagen',params:[id:pacienteInstance.id])}">
 				</li>
 				</g:if>
 			

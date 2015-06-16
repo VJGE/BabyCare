@@ -7,9 +7,17 @@
 		<asset:javascript src="mainResponsable.js"/>
 		<asset:stylesheet src="style.css"/>
 		<asset:stylesheet src="grid_12.css"/>
+		<asset:stylesheet src="fullcalendar.css"/>
+		<asset:stylesheet src="fullcalendar.min.css"/>
+		<asset:stylesheet src="fullcalendar.print.css.css" media='print'/>
+		<asset:javascript src="fullcalendar.js"/>
+		<asset:javascript src="jquery.min.js"/>
+		<asset:javascript src="moment.min.js"/>
+		<asset:javascript src="fullcalendar.min.js"/>
 	</head>
 	<body>
 	<g:form action="mainResp">
+		
 		<section class="section-content">
 		<div class="buttons">
 			<ul class="ms">
@@ -40,7 +48,9 @@
 					</ul>
 			</li>
 			</ul>
+			
 		</div>
+		
 		<div class="tittlecontent">
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>			
@@ -104,5 +114,81 @@
 		</section>
 	</g:form>
 	<div class="clear"></div>
+	
+	<div class="calendario">
+	<script>
+	
+		$(document).ready(function() {
+	
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+				defaultDate: '2015-02-12',
+				businessHours: true, // display business hours
+				editable: true,
+				events: [
+					{
+						title: 'Business Lunch',
+						start: '2015-02-03T13:00:00',
+						constraint: 'businessHours'
+					},
+					{
+						title: 'Meeting',
+						start: '2015-02-13T11:00:00',
+						constraint: 'availableForMeeting', // defined below
+						color: '#257e4a'
+					},
+					{
+						title: 'Conference',
+						start: '2015-02-18',
+						end: '2015-02-20'
+					},
+					{
+						title: 'Party',
+						start: '2015-02-29T20:00:00'
+					},
+	
+					// areas where "Meeting" must be dropped
+					{
+						id: 'availableForMeeting',
+						start: '2015-02-11T10:00:00',
+						end: '2015-02-11T16:00:00',
+						rendering: 'background'
+					},
+					{
+						id: 'availableForMeeting',
+						start: '2015-02-13T10:00:00',
+						end: '2015-02-13T16:00:00',
+						rendering: 'background'
+					},
+	
+					// red areas where no events can be dropped
+					{
+						start: '2015-02-24',
+						end: '2015-02-28',
+						overlap: false,
+						rendering: 'background',
+						color: '#ff9f89'
+					},
+					{
+						start: '2015-02-06',
+						end: '2015-02-08',
+						overlap: false,
+						rendering: 'background',
+						color: '#ff9f89'
+					}
+				]
+			});
+			
+		});
+	
+	</script>
+	
+	<div id='calendar'></div>	
+
+	</div>
 </body>
 </html>

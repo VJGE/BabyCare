@@ -5,7 +5,6 @@
 		<asset:stylesheet src="mainPaciente.css"/>
 		<asset:stylesheet src="carousel - copia.css"/>
 		<asset:javascript src="carousel.js"/>
-		<asset:stylesheet src="mainPaciente.css"/>
 	</head>
 	<body>
 		<form name="form1" method="post" action="">
