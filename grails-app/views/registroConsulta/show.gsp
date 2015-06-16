@@ -50,6 +50,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${registroConsultaInstance?.lugarConsulta}">
+				<li class="fieldcontain">
+					<span id="lugarConsulta-label" class="property-label"><g:message code="registroConsulta.lugarConsulta.label" default="Lugar Consulta" /></span>
+					
+						<span class="property-value" aria-labelledby="lugarConsulta-label"><g:fieldValue bean="${registroConsultaInstance}" field="lugarConsulta"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${registroConsultaInstance?.historiaClinica}">
 				<li class="fieldcontain">
 					<span id="historiaClinica-label" class="property-label"><g:message code="registroConsulta.historiaClinica.label" default="Historia Clinica" /></span>
