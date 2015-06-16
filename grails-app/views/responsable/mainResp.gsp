@@ -5,6 +5,8 @@
 		<meta name="layout" content="main" />
 		<asset:stylesheet src="mainResponsable.css"/>
 		<asset:javascript src="mainResponsable.js"/>
+		<asset:stylesheet src="style.css"/>
+		<asset:stylesheet src="grid_12.css"/>
 	</head>
 	<body>
 	<g:form action="mainResp">
@@ -32,6 +34,9 @@
 						<li>
 							<div id="btn_3" class="three" onClick="showRecom(this.id,'recomMotriz')">Motriz</div>
 						</li>
+						<li>
+							<div id="btn_4" class="four" onClick="showRecom(this.id,'recomCom')">Comunicativo</div>
+						</li>
 					</ul>
 			</li>
 			</ul>
@@ -39,6 +44,9 @@
 		<div class="tittlecontent">
 			<h1 class="text-center">RECOMENDACIONES</h1>
 		</div>			
+		<div class="divTextRecom">
+			<p>HOLAAAAAAAAAAAAAAAAAAAa</p>
+		</div>
 		<div id="recomCognitivo" class="hideRecom">
 			<asset:image src='cognitivo.jpg' alt='cargando' style='height:100%; width:auto;' />
 		</div>
@@ -48,7 +56,9 @@
 		<div id="recomMotriz" class="hideRecom">
 			<asset:image src='motricidad.jpg' alt='cargando' style='height:100%; width:auto;' />
 		</div>
-		
+		<div id="recomCom" class="hideRecom">
+			<asset:image src='comunicativo.jpg' alt='cargando' style='height:100%; width:auto;' />
+		</div>
 		
 		
 		<div id="squareRecom" class="divRecom">
@@ -57,26 +67,26 @@
                 	<div class="pad-3">
                      	<div class="block-8 wrap">
                      		<div>
-                        		<asset:image src="/FONDOS/page4-img1.jpg" alt="" class="img-border" />
-                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        		<asset:image src="cognitivo.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><div id="btn_1_2" onClick="showRecom(this.id,'recomCognitivo')"><strong>Cognitivo</strong></div></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
                        		</div>
                         	<div>
-                        		<asset:image src="/FONDOS/page4-img2.jpg" alt="" class="img-border" />
-                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        		<asset:image src="social.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><div id="btn_2_2" onClick="showRecom(this.id,'recomSocial')"><strong>Social</strong></div></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
                         	</div>
                      	</div>
                      	<div class="block-8 wrap top-3">
                      		<div>
-                        		<asset:image src="/FONDOS/page4-img4.jpg" alt="" class="img-border" />
-                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        		<asset:image src="motricidad.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><div id="btn_3_2" onClick="showRecom(this.id,'recomMotriz')"><strong>Motriz</strong></div></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
                         	</div>
                         	<div>
-                        		<asset:image src="/FONDOS/page4-img5.jpg" alt="" class="img-border" />
-                        		<p class="top-1"><a href="#" class="link"><strong>Lorem ipsum dolor sit amet</strong></a></p>
-                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat... <a href="#" class="link">Read More</a></p>
+                        		<asset:image src="comunicativo.jpg" alt="" class="img-border" />
+                        		<p class="top-1"><div id="btn_4_2" onClick="showRecom(this.id,'recomCom')"><strong>Comunicativo</strong></div></p>
+                    			<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna erat</p>
                         	</div>
                      	</div>
                 	</div>
