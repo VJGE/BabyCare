@@ -186,6 +186,17 @@ section {
 	display: block;
 }
 
+.one,.two,.three,.four{
+	width:180px;
+	height:40px;
+	color:#000000;
+	font-size:1.25em;
+	border-radius:0.3em;
+	text-decoration:none;
+	display: block;
+}
+
+
 .buttons a.datos{
 	background-image:url(../images/boy31.png);
 }
@@ -336,6 +347,7 @@ section {
 	display: none;
 	position: absolute;
 	min-width: 40px;
+	margin-right: 45px;
 }
 
 .ms li:hover >ul{
@@ -373,7 +385,7 @@ section {
 	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 	font-size: 14px;
 	float:left;
-	margin-top:200px;
+	margin-top:310px;
 }
 #calendar {
 			max-width: 300px;
