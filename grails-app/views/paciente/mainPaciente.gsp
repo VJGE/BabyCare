@@ -95,11 +95,12 @@
 			<td>Peso</td>
 			<td>Talla</td>
 			<td>PC</td></tr>
-			<tr><td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td></tr>
+			<tr><td><h6><g:formatDate format="dd-MM-yyyy" date="${new Date()}" /></h6></td>
+			<td><h6><g:fieldValue bean="${pacienteInstance}" field="edad"/> años 
+						<g:fieldValue bean="${pacienteInstance}" field="edadMeses"/> meses </h6></td>
+			<td><h6><g:fieldValue bean="${pacienteInstance}" field="peso"/></h6></td>
+			<td><h6><g:fieldValue bean="${pacienteInstance}" field="talla"/></h6></td>
+			<td><h6><g:fieldValue bean="${pacienteInstance}" field="pc"/></h6></td></tr>
 			<tr><td></td>
 			<td></td>
 			<td></td>
