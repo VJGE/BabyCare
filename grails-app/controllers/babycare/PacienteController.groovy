@@ -14,7 +14,9 @@ class PacienteController {
 	def mainPaciente(Paciente pacienteInstance){
 		respond pacienteInstance
 	}
-	def desarrolloPaciente(){}
+	def desarrolloPaciente(Paciente pacienteInstance){
+		respond pacienteInstance
+	}
 	def prueba(){}
 	def datosPaciente(){
 	}
