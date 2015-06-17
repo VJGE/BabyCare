@@ -21,10 +21,16 @@ function showRecom(btn,square){
 	if(btn=="btn_1_2"){
 		document.getElementById("squareText").innerHTML = cogn;
 	}
+	if(btn=="btn_1_3"){
+		document.getElementById("squareText").innerHTML = cogn;
+	}
 	if(btn=="btn_2"){
 		document.getElementById("squareText").innerHTML = soci;
 	}
 	if(btn=="btn_2_2"){
+		document.getElementById("squareText").innerHTML = soci;
+	}
+	if(btn=="btn_2_3"){
 		document.getElementById("squareText").innerHTML = soci;
 	}
 	if(btn=="btn_3"){
@@ -33,10 +39,16 @@ function showRecom(btn,square){
 	if(btn=="btn_3_2"){
 		document.getElementById("squareText").innerHTML = mot;
 	}
+	if(btn=="btn_3_3"){
+		document.getElementById("squareText").innerHTML = mot;
+	}
 	if(btn=="btn_4"){
 		document.getElementById("squareText").innerHTML = com;
 	}
 	if(btn=="btn_4_2"){
+		document.getElementById("squareText").innerHTML = com;
+	}
+	if(btn=="btn_4_3"){
 		document.getElementById("squareText").innerHTML = com;
 	}
 	document.getElementById(square).className = "divRecom";

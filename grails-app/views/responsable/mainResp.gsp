@@ -76,24 +76,24 @@
                 	<div class="pad-3">
                      	<div class="block-8 wrap">
                      		<div>
-                        		<asset:image src="cognitivo.jpg" alt="" class="img-border" />
+                        		<div id="btn_1_3" onClick="showRecom(this.id,'recomCognitivo')"><asset:image src="cognitivo.jpg" alt="" class="img-border" /></div>
                         		<p class="top-1"><div id="btn_1_2" onClick="showRecom(this.id,'recomCognitivo')"><strong>Cognitivo</strong></div></p>
                     			<p>12 a 18 meses de edad</p>
                        		</div>
                         	<div>
-                        		<asset:image src="social.jpg" alt="" class="img-border" />
+                        		<div id="btn_2_3" onClick="showRecom(this.id,'recomSocial')"><asset:image src="social.jpg" alt="" class="img-border" /></div>
                         		<p class="top-1"><div id="btn_2_2" onClick="showRecom(this.id,'recomSocial')"><strong>Social</strong></div></p>
                     			<p>Bebés de 7 meses y Niños de 1 a 3 años</p>
                         	</div>
                      	</div>
                      	<div class="block-8 wrap top-3">
                      		<div>
-                        		<asset:image src="motricidad.jpg" alt="" class="img-border" />
+                        		<div id="btn_3_3" onClick="showRecom(this.id,'recomMotriz')"><asset:image src="motricidad.jpg" alt="" class="img-border" /></div>
                         		<p class="top-1"><div id="btn_3_2" onClick="showRecom(this.id,'recomMotriz')"><strong>Motriz</strong></div></p>
                     			<p>Niños de 1-3 años</p>
                         	</div>
                         	<div>
-                        		<asset:image src="comunicativo.jpg" alt="" class="img-border" />
+                        		<div id="btn_4_3" onClick="showRecom(this.id,'recomCom')"><asset:image src="comunicativo.jpg" alt="" class="img-border" /></div>
                         		<p class="top-1"><div id="btn_4_2" onClick="showRecom(this.id,'recomCom')"><strong>Comunicativo</strong></div></p>
                     			<p>Inicio del habla</p>
                         	</div>
@@ -179,8 +179,6 @@
 	<div id='calendar'></div>	
 
 	</div>
-		
-		
 		
 		
 		
