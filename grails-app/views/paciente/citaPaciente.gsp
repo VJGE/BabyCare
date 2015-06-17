@@ -19,7 +19,8 @@
 	    function drawMap () {
 	        var data = google.visualization.arrayToDataTable([
 	                                                          ['Lat', 'Long', 'Name'],
-	                                                          [4.709919, -74.078267, 'Clinica Juan N. Corpas'],
+	                                                          [4.709919, -74.078267, 'Clinica Juan N. Corpas, Rodrigo Lara Bonilla #71B, '],
+	                                                          [4.724298, -74.123645, 'Centro médico familiar calle 80, Av Calle 80 #116b-1 a 116b-73']
 	                                                        ]);
 	
 	      var options = {
