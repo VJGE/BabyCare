@@ -77,7 +77,8 @@
 				<a href="" class="medicamentos">Medicamentos</a>
 			</li>
 			<li>
-				<a href="/BabyCare/paciente/desarrolloPaciente" class="desarrollo">Desarrollo</a>
+				<g:link action="desarrolloPaciente" id="${pacienteInstance.id}" class="desarrollo">Desarrollo</g:link>
+				<!-- <a href="/BabyCare/paciente/desarrolloPaciente" class="desarrollo">Desarrollo</a> -->
 			</li>
 		</ul>
 		</div>

@@ -86,25 +86,29 @@
 
   <body>
 
-		<div class="buttons" >
+		<div class="buttons">
 		<ul>
 			<li>
-				<a href="" class="datos"> Datos personales</a>
+				<g:link action="mainPaciente" id="${pacienteInstance.id}" class="datos">Datos personales</g:link>
+				<!-- <a href="" class="datos"> Datos personales</a>  -->
 			</li>
 			<li>
-				<a href="" class="historia"> Historia clinica</a>
+				<g:link action="historiaPaciente" id="${pacienteInstance.id}" class="historia">Historia Clinica</g:link>
+				<!-- <a href="" class="historia"> Historia clinica</a> -->
 			</li>
 			<li>
 				<a href="" class="vacunas">Vacunas</a>
 			</li>
 			<li>
-				<a href="" class="citas">Citas</a>
+				<g:link action="citaPaciente" id="${pacienteInstance.id}" class="citas">Citas</g:link>
+				<!--<a href="/BabyCare/paciente/citaPaciente" class="citas">Citas</a>-->
 			</li>
 			<li>
 				<a href="" class="medicamentos">Medicamentos</a>
 			</li>
 			<li>
-				<a href="/BabyCare/paciente/desarrolloPaciente" class="desarrollo">Desarrollo</a>
+				<g:link action="datosPaciente" id="${pacienteInstance.id}" class="desarrollo">Desarrollo</g:link>
+				<!-- <a href="/BabyCare/paciente/desarrolloPaciente" class="desarrollo">Desarrollo</a> -->
 			</li>
 		</ul>
 		</div>
